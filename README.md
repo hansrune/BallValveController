@@ -12,17 +12,17 @@ Some of the main features and benefits
 - **Supports 5-wire CR05 wiring**
     - The true state of the valve can be fed back
     - You can detect valve malfunctioning
-    - Is used by the firmware to automatically detect NO (normally open) or NC (normally closed) operation
+    - Is used by the firmware to automatically detect NO (normally open) or NC (normally closed) operation during startup
 - **Supports battery backup and battery status monitoring**
     - A 9V battery is sufficient to make sure the valve returns to it's default state during power failure and resets
     - The battery voltage is readable and available as a sensor
-- **Inputs for water leak protection usage**
-    - There are inputs to force the valve to default state as well as activated state. Typically used with a Fibaro water leak detector associates with a Fibaro smart implant so that the valve can be "overruled" without any host controller / home automation being involved.
+- **Water leak sensors and protection**
+    - There are inputs to force the valve to the default state as well as the activated state. Typically used with a Fibaro water leak detector associates with a Fibaro smart implant so that the valve can be "overruled" without any host controller / home automation being involved. Numerous Z-wave and Zigbee devices support this.
 - **1-wire support**
-    - This is used to attach DS18B20 temperature sensor if you have a nearby water heater
+    - This is used to attach DS18B20 temperature sensor if you have a nearby water heater. Two imputs are available, but you can also use multiple sensors on one wire
 - **I2C support**
-    - An I2C attachment is available to use with I2C sensors - or you can use the same GPIO pins for any purpose og choise
- 
+    - An I2C pin header with power supply is available to use with I2C sensors
+    - ... or you can use the same GPIO pins for any purpose og choise
 
 
 ## Getting started
@@ -35,19 +35,26 @@ git clone --recurse-submodules https://github.com/hansrune/BallValveController.g
 
 ### Materials used
 
-This project uses the [Seed Studio XIAO ESP32C3 RISC-V module](https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html). This tiny device has proven a lot more reliable than any previous ESP8266 module I have used before, and also comes with an IPX connector for the antenna.
+This project uses the [Seed Studio XIAO ESP32C3 RISC-V module](https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html). This tiny device has proven to be more reliable than any most ESP8266 modules used before. It also comes with an IPX connector for connecting an external antenna.
 
-A ball valve like [these HSH-FLO valves](https://www.ebay.com/itm/121728665101?var=420727385309) has metal gears as well as manual override possibility, and has proven very reliable. I typically use a 2 or sometimes 3-port version, 3/4" DN20, DC12/24V and with CR05-01 wiring
+A ball valve like [these HSH-FLO valves](https://www.ebay.com/itm/121728665101?var=420727385309) uses metal gears, and also have a manual override possibility. Despite the moderate cost, I have found them very reliable. I typically use a 2 or some times 3-port version, size 3/4" DN20, DC12/24V and with CR05-01 wiring
 
 Any available 12V DC power supply over 1A should do.
 
-There are many options and possible pinouts for DC-DC converters for the 12V to 5V conversion
+There are many options and possible pinouts for DC-DC converters for the 12V to 5V conversion. A linear regulator (L7805) will need a heatsink, so a DC-DC converter is recommended.
 
 The MOSFETs need a low Vgs trigger voltage, i.e. well under 2V.
 
-## Assembly
+## Hardware assembly
 
-Soldering a prototype by hand is possible if you have a steady hand and a small solder iron tip. A microscope is recommended.
+Soldering a prototype by hand is possible if you have a steady hand and a small solder iron tip. A microscope is recommended to propely inspect the solder joints. 
+
+Recommend to do the SMD parts first, then other components, and then test at least the following **before adding the ESP32 module**:
+
+- Attach a battery and check that the valve can be operated both NO and NC
+- Add a power supply and check that 5V conversion is OK
+- Apply 5V to the ESP32c3 pin 11 to check that the relay is operated
+- Apply 0V to pin 1 of the ESP32c3 and check that pin 2 receives a 200ms readout of the battery voltage (divided by the 68k + 20k resistors)
 
 ## Known bugs
 
