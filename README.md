@@ -9,18 +9,18 @@ This is my 7th generation ball valve controller which I use to control water sup
 
 Some of the main features and benefits
 
-- ** Supports 5-wire CR05 wiring **
+- **Supports 5-wire CR05 wiring**
     - The true state of the valve can be fed back
     - You can detect valve malfunctioning
     - Is used by the firmware to automatically detect NO (normally open) or NC (normally closed) operation
-- ** Supports battery backup and battery status monitoring **
+- **Supports battery backup and battery status monitoring**
     - A 9V battery is sufficient to make sure the valve returns to it's default state during power failure and resets
     - The battery voltage is readable and available as a sensor
-- ** Inputs for water leak protection usage **
+- **Inputs for water leak protection usage**
     - There are inputs to force the valve to default state as well as activated state. Typically used with a Fibaro water leak detector associates with a Fibaro smart implant so that the valve can be "overruled" without any host controller / home automation being involved.
-- ** 1-wire support
+- **1-wire support**
     - This is used to attach DS18B20 temperature sensor if you have a nearby water heater
-- ** I2C support
+- **I2C support**
     - An I2C attachment is available to use with I2C sensors - or you can use the same GPIO pins for any purpose og choise
  
 
