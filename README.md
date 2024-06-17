@@ -64,7 +64,7 @@ You should test at least the following **before adding the ESP32 module**:
 
 A Fibaro Smart implant needs a 9-30V power supply. To accomodate that, you can supply 12V by running a wire on the back of the PCB as follows:
 
-![12V supply for implant](images/Implant-12V.png)
+<center>![12V supply for implant](images/Implant-12V.png)</center>
 
 ## How to contribute
 
