@@ -38,7 +38,7 @@ Some of the main features and benefits
 
 The easiest way to view the controller is probably this block level wiring diagram:
 
-<p align="center" width="100">
+<p align="center">
     <img src="images/BallValveCtrl-Wiring-7.0.png">
 </p>
 
@@ -48,7 +48,7 @@ If you use more than one 1-wire sensor, it is easier in ESPHome to use both inpu
 
 There should of course be a dedicated 3-printed enclosure, but typical electic mounts are also easy and affordable. Some also fit well with using wire strain releaf, which is of course recommended.
 
-<p align="center" width="100">
+<p align="center">
     <img src="images/BallValveCtrl-Box.jpg">
 </p>
 
@@ -56,7 +56,7 @@ The switch is used to select between normally open and normally closed operation
 
 One of my permanent setups look like this when mounted
 
-<p align="center" width="200">
+<p align="center">
     <img src="images/BallValveCtrl-Mounted.jpg">
 </p>
 
@@ -72,7 +72,7 @@ git clone --recurse-submodules https://github.com/hansrune/BallValveController.g
 
 ### Materials used
 
-This project uses the [Seed Studio XIAO ESP32C3 RISC-V module](https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html). This tiny device has proven to be more reliable than most ESP8266 modules used before. It also comes with an IPX connector for connecting an external antenna, and is delivered with a simple external antenna for good range. 
+This project uses the [Seed Studio XIAO ESP32C3 RISC-V module](https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html). This tiny device has proven to be more reliable than most ESP8266 modules used before. It also comes with an IPX connector for connecting an external antenna, and is delivered with a simple external antenna for good range.
 
 A ball valve like [these HSH-FLO valves](https://www.ebay.com/itm/121728665101?var=420727385309) uses metal gears, and also have a manual override possibility. Despite the moderate cost, I have found them very reliable. I typically use a 2 or some times 3-port version, size 3/4" DN20, DC12/24V and with CR05-01 wiring
 
@@ -90,7 +90,7 @@ The MOSFETs need a low Vgs trigger voltage, i.e. well under 3V on full load. I h
 
 Soldering a prototype by hand is possible if you have a steady hand and a small solder iron tip. A microscope is recommended to propely inspect the solder joints.
 
-Recommend to do the SMD parts first, then other components. I prefer to mount the 5mm LEDs on the back side. 
+Recommend to do the SMD parts first, then other components. I prefer to mount the 5mm LEDs on the back side.
 
 ### Hardware
 
