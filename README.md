@@ -10,7 +10,7 @@ This is my 7th generation ball valve controller which I use to control water sup
 Some of the main features and benefits
 
 - **Supports 5-wire CR05 wiring**
-    - The true state of the valve can be fed back
+    - The true state of the valve can be fed back to your automation system over WiFi
     - You can detect valve malfunctioning
     - Is used by the firmware to automatically detect NO (normally open) or NC (normally closed) operation during startup
 - **Supports battery backup and battery status monitoring**
@@ -23,7 +23,40 @@ Some of the main features and benefits
 - **I2C support**
     - An I2C pin header with power supply is available to use with I2C sensors
     - ... or you can use the same GPIO pins for any other purpose of your choise
+- **Firmware of your choise**
+    - ESPEasy with Domoticz over http. Device creation uses virtual sensors
+    - ESPEasy with Domotics and Home Assistant via MQTT. Device creation uses a MQTT configuration text file.
+    - ESPHome to Home Assistant via MQTT and auto discovery
+    - ESPHome to Domoticz via MQTT and auto discovery
+    - ... and as the hardware supports using both Arduino and ESP-IF development kits, almost any other firmware can be created.
 
+## Implementation and design
+
+The easiest way to view the controller is probably this block level wiring diagram:
+
+<p align="center" width="25%">
+    <img src="images/BallValveCtrl-Wiring-7.0.png">
+</p>
+
+This is just a typical setup for the various external components. The detailed PCB diagram is [available here](KiCad/BallValveController-schema-7.0.pdf)
+
+If you use more than one 1-wire sensor, it is easier in ESPHome to use both inputs with automatic sensor address detection.
+
+There should of course be a dedicated 3-printed enclosure, but typical electic mounts are also easy and affordable. Some also fit well with using wire strain releaf, which is of course recommended.
+
+<p align="center" width="25%">
+    <img src="images/BallValveCtrl-Box.jpg">
+</p>
+
+The switch is used to select between normally open and normally closed operation. As the ball valve will return to it's default position during reset, the valve position feedback switches are used to automatically determine if the setup is normally open or normally closed.
+
+One of my permanent setups look like this when mounted
+
+<p align="center" width="25%">
+    <img src="images/BallValveCtrl-Mounted.jpg">
+</p>
+
+... where the 1-wire sensors are attached to top and bottom of our electric water boiler.
 
 ## Getting started
 
@@ -64,7 +97,9 @@ You should test at least the following **before adding the ESP32 module**:
 
 A Fibaro Smart implant needs a 9-30V power supply. To accomodate that, you can supply 12V by running a wire on the back of the PCB as follows:
 
-![12V supply for implant](images/Implant-12V.png)
+<p align="center" width="33%">
+    <img src="images/oshw_cert_label.png">
+</p>
 
 ## How to contribute
 
@@ -88,7 +123,7 @@ The general process of contributing on GitHub is widely documented however the o
 
 ## License
 
-This project is licensed under the [GNU General Public License v3.0](LICENSE) and [CERN-OHL-W](LICENCE) and [CC BY-SA](CC-BY-SA_LICENCE)
+This project is licensed under the [GNU General Public License v3.0](GNU-LICENSE-V3.txt) and [CERN-OHL-W](OHL-LICENSE.txt) and [CC BY-SA](CC-BY-SA-LICENCE.txt)
 
 <p align="left" width="100%">
     <img src="images/oshw_cert_label.png">
