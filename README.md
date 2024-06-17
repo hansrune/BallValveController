@@ -51,7 +51,7 @@ Soldering a prototype by hand is possible if you have a steady hand and a small 
 
 Recommend to do the SMD parts first, then other components. I prefer to mount the 5mm LEDs on the back side. 
 
-### Hardware tests
+### Hardware
 
 You should test at least the following **before adding the ESP32 module**:
 
@@ -64,7 +64,7 @@ You should test at least the following **before adding the ESP32 module**:
 
 A Fibaro Smart implant needs a 9-30V power supply. To accomodate that, you can supply 12V by running a wire on the back of the PCB as follows:
 
-<center>![12V supply for implant](images/Implant-12V.png)</center>
+<center><img src="images/Implant-12V.png" width="300"></center>
 
 ## How to contribute
 
