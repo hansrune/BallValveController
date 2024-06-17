@@ -80,6 +80,10 @@ Any available 12V DC power supply over 1A should do.
 
 There are many options and possible pinouts for DC-DC converters for the 12V to 5V conversion. A linear regulator (L7805) will need a heatsink, so a DC-DC converter is recommended.
 
+<p align="center">
+    <img src="images/images/DC-DC-Options.jpg">
+</p>
+
 The MOSFETs need a low Vgs trigger voltage, i.e. well under 3V on full load. I have used Si2301/A1SHB for the P-channel, and Si2302/N025P for the N-channel, and 2N2222/1P - all SOT-23 packages.
 
 ## Hardware assembly
