@@ -19,10 +19,10 @@ Some of the main features and benefits
 - **Water leak sensors and protection**
     - There are inputs to force the valve to the default state as well as the activated state. Typically used with a Fibaro water leak detector associates with a Fibaro smart implant so that the valve can be "overruled" without any host controller / home automation being involved. Numerous Z-wave and Zigbee devices support this.
 - **1-wire support**
-    - This is used to attach DS18B20 temperature sensor if you have a nearby water heater. Two imputs are available, but you can also use multiple sensors on one wire
+    - This is used to attach DS18B20 temperature sensor if you have a nearby water heater. Two inputs with pull-ups are available, but you can also use multiple sensors on one wire
 - **I2C support**
     - An I2C pin header with power supply is available to use with I2C sensors
-    - ... or you can use the same GPIO pins for any purpose og choise
+    - ... or you can use the same GPIO pins for any other purpose of your choise
 
 
 ## Getting started
@@ -35,7 +35,7 @@ git clone --recurse-submodules https://github.com/hansrune/BallValveController.g
 
 ### Materials used
 
-This project uses the [Seed Studio XIAO ESP32C3 RISC-V module](https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html). This tiny device has proven to be more reliable than any most ESP8266 modules used before. It also comes with an IPX connector for connecting an external antenna.
+This project uses the [Seed Studio XIAO ESP32C3 RISC-V module](https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html). This tiny device has proven to be more reliable than most ESP8266 modules used before. It also comes with an IPX connector for connecting an external antenna, and is delivered with a simple external antenna for good range. 
 
 A ball valve like [these HSH-FLO valves](https://www.ebay.com/itm/121728665101?var=420727385309) uses metal gears, and also have a manual override possibility. Despite the moderate cost, I have found them very reliable. I typically use a 2 or some times 3-port version, size 3/4" DN20, DC12/24V and with CR05-01 wiring
 
@@ -43,13 +43,17 @@ Any available 12V DC power supply over 1A should do.
 
 There are many options and possible pinouts for DC-DC converters for the 12V to 5V conversion. A linear regulator (L7805) will need a heatsink, so a DC-DC converter is recommended.
 
-The MOSFETs need a low Vgs trigger voltage, i.e. well under 2V.
+The MOSFETs need a low Vgs trigger voltage, i.e. well under 3V on full load. I have used Si2301/A1SHB for the P-channel, and Si2302/N025P for the N-channel, and 2N2222/1P - all SOT-23 packages.
 
 ## Hardware assembly
 
-Soldering a prototype by hand is possible if you have a steady hand and a small solder iron tip. A microscope is recommended to propely inspect the solder joints. 
+Soldering a prototype by hand is possible if you have a steady hand and a small solder iron tip. A microscope is recommended to propely inspect the solder joints.
 
-Recommend to do the SMD parts first, then other components, and then test at least the following **before adding the ESP32 module**:
+Recommend to do the SMD parts first, then other components. I prefer to mount the 5mm LEDs on the back side. 
+
+### Hardware tests
+
+You should test at least the following **before adding the ESP32 module**:
 
 - Attach a battery and check that the valve can be operated both NO and NC
 - Add a power supply and check that 5V conversion is OK
@@ -61,7 +65,6 @@ Recommend to do the SMD parts first, then other components, and then test at lea
 A Fibaro Smart implant needs a 9-30V power supply. To accomodate that, you can supply 12V by running a wire on the back of the PCB as follows:
 
 ![12V supply for implant](images/Implant-12V.png)
-
 
 ## How to contribute
 
