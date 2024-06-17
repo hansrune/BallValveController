@@ -38,7 +38,7 @@ Some of the main features and benefits
 
 The easiest way to view the controller is probably this block level wiring diagram:
 
-<p align="center" width="300px">
+<p align="center" width="100">
     <img src="images/BallValveCtrl-Wiring-7.0.png">
 </p>
 
@@ -48,7 +48,7 @@ If you use more than one 1-wire sensor, it is easier in ESPHome to use both inpu
 
 There should of course be a dedicated 3-printed enclosure, but typical electic mounts are also easy and affordable. Some also fit well with using wire strain releaf, which is of course recommended.
 
-<p align="center" width="300px">
+<p align="center" width="100">
     <img src="images/BallValveCtrl-Box.jpg">
 </p>
 
@@ -56,7 +56,7 @@ The switch is used to select between normally open and normally closed operation
 
 One of my permanent setups look like this when mounted
 
-<p align="center" width="200px">
+<p align="center" width="200">
     <img src="images/BallValveCtrl-Mounted.jpg">
 </p>
 
@@ -105,7 +105,7 @@ You should test at least the following **before adding the ESP32 module**:
 
 A Fibaro Smart implant needs a 9-30V power supply. To accomodate that, you can supply 12V by running a wire on the back of the PCB as follows:
 
-<p align="center" width="33%">
+<p align="center">
     <img src="images/Implant-12V.png">
 </p>
 
