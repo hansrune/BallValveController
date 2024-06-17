@@ -23,6 +23,10 @@ Some of the main features and benefits
 - **I2C support**
     - An I2C pin header with power supply is available to use with I2C sensors
     - ... or you can use the same GPIO pins for any other purpose of your choise
+- **WiFi based**
+    - This is almost a must have for most home automation systems
+    - OTA support
+    - Configuration backup, restore and bulk updates.
 - **Firmware of your choise**
     - ESPEasy with Domoticz over http. Device creation uses virtual sensors
     - ESPEasy with Domotics and Home Assistant via MQTT. Device creation uses a MQTT configuration text file.
@@ -34,7 +38,7 @@ Some of the main features and benefits
 
 The easiest way to view the controller is probably this block level wiring diagram:
 
-<p align="center" width="25%">
+<p align="center" width="20%">
     <img src="images/BallValveCtrl-Wiring-7.0.png">
 </p>
 
@@ -44,7 +48,7 @@ If you use more than one 1-wire sensor, it is easier in ESPHome to use both inpu
 
 There should of course be a dedicated 3-printed enclosure, but typical electic mounts are also easy and affordable. Some also fit well with using wire strain releaf, which is of course recommended.
 
-<p align="center" width="25%">
+<p align="center" width="20%">
     <img src="images/BallValveCtrl-Box.jpg">
 </p>
 
@@ -98,7 +102,7 @@ You should test at least the following **before adding the ESP32 module**:
 A Fibaro Smart implant needs a 9-30V power supply. To accomodate that, you can supply 12V by running a wire on the back of the PCB as follows:
 
 <p align="center" width="33%">
-    <img src="images/oshw_cert_label.png">
+    <img src="images/Implant-12V.png">
 </p>
 
 ## How to contribute
