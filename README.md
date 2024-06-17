@@ -38,7 +38,7 @@ Some of the main features and benefits
 
 The easiest way to view the controller is probably this block level wiring diagram:
 
-<p align="center" width="20%">
+<p align="center" width="300px">
     <img src="images/BallValveCtrl-Wiring-7.0.png">
 </p>
 
@@ -48,7 +48,7 @@ If you use more than one 1-wire sensor, it is easier in ESPHome to use both inpu
 
 There should of course be a dedicated 3-printed enclosure, but typical electic mounts are also easy and affordable. Some also fit well with using wire strain releaf, which is of course recommended.
 
-<p align="center" width="20%">
+<p align="center" width="300px">
     <img src="images/BallValveCtrl-Box.jpg">
 </p>
 
@@ -56,7 +56,7 @@ The switch is used to select between normally open and normally closed operation
 
 One of my permanent setups look like this when mounted
 
-<p align="center" width="25%">
+<p align="center" width="200px">
     <img src="images/BallValveCtrl-Mounted.jpg">
 </p>
 
@@ -133,7 +133,7 @@ The general process of contributing on GitHub is widely documented however the o
 
 This project is licensed under the [GNU General Public License v3.0](GNU-LICENSE-V3.txt) and [CERN-OHL-W](OHL-LICENSE.txt) and [CC BY-SA](CC-BY-SA-LICENCE.txt)
 
-<p align="left" width="100%">
+<p align="center" width="100%">
     <img src="images/oshw_cert_label.png">
 </p>
 
