@@ -140,7 +140,7 @@ A Fibaro Smart implant needs a 9-30V power supply. To accomodate that, you can s
 
 ## License
 
-This project is licensed under the [GNU General Public License v3.0](GNU-LICENSE-V3.txt) for the software, [CERN-OHL-W](OHL-LICENSE.txt) for the hardwaremm, and [CC BY-SA](CC-BY-SA-LICENCE.txt) for the documentation and ideas.
+This project is licensed under the [GNU General Public License v3.0](GNU-LICENSE-V3.txt) for the software, [CERN-OHL-W](OHL-LICENSE.txt) for the hardware, and [CC BY-SA](CC-BY-SA-LICENCE.txt) for the documentation and ideas.
 
 <p align="center" width="100%">
     <img src="images/oshw_cert_label.png">
