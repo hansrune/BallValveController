@@ -65,7 +65,7 @@ This is just a typical setup for the various external components. The schematic 
 
 If you use more than one 1-wire sensor, it is easier in ESPHome to use both inputs (RX+TX in diagram) with automatic sensor address detection.
 
-## GPIO pin usage
+### GPIO pin usage
 
 | PIN      | Capabilty          | Function                            |
 |----------|--------------------|-------------------------------------|
@@ -80,6 +80,32 @@ If you use more than one 1-wire sensor, it is easier in ESPHome to use both inpu
 | GPIO20   | RX / 1-wire        | Serial or 1-wire sensor             |
 | GPIO21   | TX / 1-wire        | Serial or 1-wire sensor             |
 
+### Interfacing leak detectors
+
+J10 is used to interface leak detectors:
+
+| PIN  | Name       | Function                              |
+|------|------------|---------------------------------------|
+| 1    | Activate   | Pull high to force non-default state  |
+| 2    | Deactivate | Battery read input                    |
+| 3    | Vcc        | Supply voltage, 3.3V, 5V or 12V strap |
+| 4    | GND        | Ground                                |
+
+#### Connecting a Fibaro Implant
+
+A Fibaro implant may be associated with Fibaro leak detector(s). This type of device to device can work even without the Z-Wave hub being operational
+
+- `VCC` - strap JP1 to the 12V supply as illustrated [here](#known-bugs), or just feed the Implant directly from the 12V power supply
+- `Deactivate` - connect to one side of Out1 - the other side to GND
+- `GND` for implant power and Out1
+
+#### Connecting an Arduino water leak sensor
+
+Typical Arduino water leak detectors are open collector outputs. Connect as follows:
+
+- `VCC` - strap/solder JP1 to the 3.3V side for sensor power 
+- `Deactivate` - connect to sensor output. This will force the valve to default state when activated
+- `GND` - sensor power ground
 
 ## Hardware - getting started
 
@@ -123,6 +149,22 @@ You should test at least the following **before adding the ESP32 module**:
 - Add a power supply and check that 5V conversion is OK
 - Apply 5V to the ESP32c3 pin 11 to check that the relay is operated
 - Apply 0V to pin 1 of the ESP32c3 and check that pin 2 receives a 200ms readout of the battery voltage (divided by the 68k + 20k resistors)
+
+## Firmwares
+
+### ESPHome
+
+ESPHome firmware can be set up from [this ESPHome configuration repository](https://github.com/hansrune/esphome-config) using the `ball_valve_test` as a template
+
+Follow the [README](https://github.com/hansrune/esphome-config) for instruction on what you will likely want to change. 
+
+By default, MQTT auto discovery is being used. This should work out og the box with Home Assistant, Domoticz and other that support [Home Assistant MQTT Auto Discovery](https://www.home-assistant.io/integrations/mqtt/#mqtt-discovery)
+
+### ESPEasy
+
+ESPEasy can be used with a number of different controllers / home automation systms. A custom firmware build description is [available here](https://github.com/hansrune/ESPEasy-custom/blob/builds/custom/mega-20240822-1/README-custombuilds.md)
+
+For configuration details and rule files, please go to [this page](./ESPEasy/)
 
 ## Known bugs
 
