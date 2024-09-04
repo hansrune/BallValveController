@@ -1,8 +1,8 @@
 # Ball Valve Controller
 
-A DYI ball valve controller for CR05 wiring based on ESP32c3. This device is mainly intended for water leak protection, but is also very suitable for irrigation. For safety, a battery helps make sure the device returns to its default state upon reset or power failure. The device can also be forced to the default state by external signals such as water leak sensors.
+A DYI ball valve controller for CR05 wiring based on ESP32c3. This device is mainly intended for irrigation and main water valve automation, but is also very suitable for water leak prevention. For safety, a battery helps make sure the device returns to its default state upon reset or power failure. The device can be directly controlled to the default state by external signals such as a local water leak sensor, or you can use your home automation system to cut off water supply based on more advanced conditions.
 
-The default state can be normally open or normally closed, and is automatically detected on restart.
+The default state can be normally open or normally closed, and is automatically detected on restart. The safety battery voltage is also monitored and available to read remotely.
 
 This board is tested with ESPhome and ESPEasy [firmware](#firmwares) (build instructions below), and is easily used with home automation systems that support MQTT auto discovery, the native Home Assistant API, and the many [controllers that ESPEasy supports](https://espeasy.readthedocs.io/en/latest/Controller/_Controller.html)
 
