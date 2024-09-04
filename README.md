@@ -1,11 +1,12 @@
 # Ball Valve Controller
 
-Ball valve controller for CR05 wiring based on ESP32c3. Used with ESPEasy and ESPHome based firmware, but Tasmota and alike are certainly also possible. I just don't use any of those
+A DYI ball valve controller for CR05 wiring based on ESP32c3. This device is mainly intended for water leak protection, but is also very suitable for irrigation. For safety, a battery helps make sure the device returns to its default state upon reset or power failure. The device can also be forced to the default state by external signals such as water leak sensors.
 
+The default state can be normally open or normally closed, and is automatically detected on restart.
+
+This board is tested with ESPhome and ESPEasy [firmware](#firmwares) (build instructions below), and is easily used with home automation systems that support MQTT auto discovery, the native Home Assistant API, and the many [controllers that ESPEasy supports](https://espeasy.readthedocs.io/en/latest/Controller/_Controller.html)
 
 ## Introduction
-
-This is my 7th generation ball valve controller which I use to control water supply, plant/garden irrigation, and for water leak protection in remote places over the last 10+ years.
 
 Some of the main features and benefits
 
@@ -33,6 +34,9 @@ Some of the main features and benefits
     - ESPHome to Home Assistant via MQTT and auto discovery
     - ESPHome to Domoticz via MQTT and auto discovery
     - ... and as the hardware supports using both Arduino and ESP-IF development kits, almost any other firmware can be created.
+- **Seed Studio XIAO ESP32C3**
+    - This device is well shielded and comes with an externam IPX antenna connector
+    - FCC and CE regulations approved
 
 ## Setup and mounting
 
@@ -42,15 +46,27 @@ A typical small electic junction box is used for an easy and affordable way for 
     <img src="images/BallValveCtrl-Box.jpg">
 </p>
 
-The switch is used to select between normally open and normally closed operation. As the ball valve will return to it's default position during reset, the valve position feedback switches are used to automatically determine if the setup is normally open or normally closed.
+Please note the positioning of the battery. The battery can be easily removed to provide room for a USB-C cable connection, in case an OTA update should fail.
 
-One of my permanent setups look like this when mounted
+The switch (see wiring below) is used to select between normally open and normally closed operation. As the ball valve will return to it's default position during reset, the valve position feedback switches are used to automatically determine if the setup is normally open or normally closed.
+
+One of my permanent setups look like this:
 
 <p align="center">
     <img src="images/BallValveCtrl-Mounted.jpg">
 </p>
 
 ... where the 1-wire sensors are attached to top and bottom of our electric water boiler.
+
+## Indicators
+
+The 5mm LEDs are suggested to be reverse mounted for the following purposes:
+
+- LED D7 will indicate the state of valve activation - solid on or off
+- LED D6
+  - will blink with a duty cycle 1-4 or 4-1 to indicate valve closed or open
+  - a duty cycle 1:1 will indicate a reset is ongoing
+  - no change indicates out of power, device death/freeze or other
 
 ## Implementation and design
 
@@ -154,17 +170,31 @@ You should test at least the following **before adding the ESP32 module**:
 
 ### ESPHome
 
-ESPHome firmware can be set up from [this ESPHome configuration repository](https://github.com/hansrune/esphome-config) using the `ball_valve_test` as a template
+ESPHome firmware can be set up from [this ESPHome configuration repository](https://github.com/hansrune/esphome-config) using the `test_ball_valve` as a template
 
-Follow the [README](https://github.com/hansrune/esphome-config) for instruction on what you will likely want to change. 
+Follow the [README](https://github.com/hansrune/esphome-config) for instruction on what you will likely want to change.
 
 By default, MQTT auto discovery is being used. This should work out og the box with Home Assistant, Domoticz and other that support [Home Assistant MQTT Auto Discovery](https://www.home-assistant.io/integrations/mqtt/#mqtt-discovery)
+
+In Home Assistant, the device has these controls:
+
+<p align="center">
+    <img src="images/HA-BallValve.jpg">
+</p>
+
+
+... and information / diagnostics panel:
+
+<p align="center">
+    <img src="images/HA-Diags.jpg">
+</p>
+
 
 ### ESPEasy
 
 ESPEasy can be used with a number of different controllers / home automation systms. A custom firmware build description is [available here](https://github.com/hansrune/ESPEasy-custom/blob/builds/custom/mega-20240822-1/README-custombuilds.md)
 
-For configuration details and rule files, please go to [this page](./ESPEasy/)
+ESPEasy requires many settings. For configuration settings and rule files, you can upload the files from [this page](./ESPEasy/) as a starting point. Please make sure to change name, unit number, controller IP addresses, NTP, syslog host and latitude/longitude. This configuration uses both a MQTT controller and a Domoticz controller. Change to what you need.
 
 ## Known bugs
 
