@@ -1,0 +1,44 @@
+//
+// Error statuses and LED blinker
+//
+on StatusErr do
+  taskvalueset,8,3,3 // LED on time
+  taskvalueset,8,4,3 // LED off time
+  timerset,6,1       // Restart timers
+endon
+
+on StatusOK do
+  taskvalueset,8,3,1 // LED on time
+  taskvalueset,8,4,1 // LED off time
+  if [ValveOpen#Switch]=1
+    taskvalueset,8,3,4  // LED on time
+  endif
+  if [ValveClosed#Switch]=1
+    taskvalueset,8,4,4  // LED off time
+  endif  
+  timerset,6,1       // Restart timers
+endon
+
+on StatusBlink do
+  taskvalueset,8,3,1 // LED on time
+  taskvalueset,8,4,1 // LED off time
+  timerset,6,1       // Restart timers
+Endon
+
+// Use timer 6 for both on and off
+on Rules#Timer=6 do
+  If [Timing#LEDState]<>0
+    gpio,9,1           // LED off
+    taskvalueset,8,2,0 // LEDState
+    timerset,6,[Timing#LEDTimeOff]
+  else
+    gpio,9,0           // LED on
+    taskvalueset,8,2,1 // LEDState
+    timerset,6,[Timing#LEDTimeOn]
+  endif 
+  if %iswifi%=0 and %uptime%>2
+    LogEntry,"ESPEasy %sysname%: WiFi is %iswifi% and uptime is %uptime% - attempt reboot",1
+    reboot
+  endif
+endon
+// -- end of rules2.txt --

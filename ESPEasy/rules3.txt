@@ -1,0 +1,72 @@
+on Configure do
+  LogEntry,"%sysname% ESPEasy: Configure ValveOpen=[ValveOpen#Switch] ValveClosed=[ValveClosed#Switch]"
+  if [ValveOpen#Switch]=0 and [ValveClosed#Switch]=1
+    taskvalueset,6,1,1 // NO
+    event OpenValve
+  elseif [ValveOpen#Switch]=1 and [ValveClosed#Switch]=0
+    taskvalueset,6,1,0 // NC
+    event CloseValve
+  else
+    taskvalueset,6,1,-1
+    event StatusErr
+  endif
+endon
+
+on OpenValve do
+  if [ValveOpen#Switch]=1
+    event StatusOK
+  else
+    taskvalueset,6,2,1 // ToBeOpen 
+    event StatusBlink
+    timerset,1,15      // Error timer 1 will be cancelled when open switch trigger
+    timerset,2,0       // Cancel close timeout timer
+    timerset,3,2700    // Repeat timer 3
+  endif
+  if [State#NormallyOpen]=0
+    gpio,10,1          // Open N/C valve
+  elseif [State#NormallyOpen]=1
+    gpio,10,0          // Open N/O valve
+  else
+    event StatusErr
+  endif
+endon
+
+on CloseValve do
+  if [ValveClosed#Switch]=1
+    event StatusOK
+  else
+    taskvalueset,6,2,0 // ToBeOpen 
+    event StatusBlink
+    timerset,2,15      // Error timer 2 will be cancelled when closed switch trigger
+    timerset,1,0       // Cancel open timeout timer
+    timerset,3,2700    // Repeat timer 3
+  endif
+  if [State#NormallyOpen]=0
+    gpio,10,0          // Open N/C valve
+  elseif [State#NormallyOpen]=1
+    gpio,10,1          // Open N/O valve
+  else
+    event StatusErr
+  endif
+endon
+
+on ValveOpen#Switch=1 do
+  if  [State#ToBeOpen]=1
+    event StatusOK
+  else
+    event StatusErr
+  endif
+  timerset,1,0         // Cancel open timeout
+endon
+
+on ValveClosed#Switch=1 do
+  if  [State#ToBeOpen]=0
+    event StatusOK
+  else
+    event StatusErr
+  endif
+  timerset,2,0         // Cancel close timeout
+endon
+
+// end of rules3.txt
+
