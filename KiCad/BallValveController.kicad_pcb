@@ -5884,7 +5884,7 @@
 		(descr "SEEDUINO XIAO ESP32C3 THT")
 		(tags "ESP32 C3 RISCV SEEDSTUDIO")
 		(property "Reference" "U2"
-			(at 9.1223 -19.39 -90)
+			(at 9.1223 -19.39 90)
 			(layer "F.SilkS")
 			(uuid "48279ce3-2e6a-4418-869d-45349bafe5db")
 			(effects
@@ -5895,18 +5895,18 @@
 			)
 		)
 		(property "Value" "SeedStudio XIAO ESP32 C3 v1"
-			(at 8.89 -5.08 -90)
+			(at 8.89 -5.08 90)
 			(layer "F.Fab")
 			(uuid "32765a86-6e9f-437e-9a92-353a11c992ba")
 			(effects
 				(font
 					(size 0.48 0.48)
-					(thickness 0.15)
+					(thickness 0.12)
 				)
 			)
 		)
 		(property "Footprint" ""
-			(at 0 0 -90)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "1c4121eb-3641-4ee1-8cf7-22d99ba1c022")
@@ -5918,7 +5918,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "6f99a2da-9e80-41d5-a680-c1075a2ea18c")
@@ -5930,7 +5930,7 @@
 			)
 		)
 		(property "Description" "SEEDUNIO XIAO ESP32C3 THT"
-			(at 0 0 -90)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "f714060f-48aa-45c4-b89b-39455b960019")
@@ -6200,6 +6200,7 @@
 			(uuid "1913ba5e-b15d-4138-9264-fa10e8335943")
 		)
 		(model "$(KIPRJMOD)/library/3D//XIAO_ESP32C3.step"
+			(hide yes)
 			(offset
 				(xyz 8 11.3 0)
 			)
@@ -6208,6 +6209,17 @@
 			)
 			(rotate
 				(xyz 0 0 180)
+			)
+		)
+		(model "${KIPRJMOD}/library/3D/XIAO-ESP32-mod.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
 			)
 		)
 	)
