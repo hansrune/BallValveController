@@ -35,7 +35,7 @@ Some of the main features and benefits
     - ESPHome to Domoticz via MQTT and auto discovery
     - ... and as the hardware supports using both Arduino and ESP-IF development kits, almost any other firmware can be created.
 - **Seed Studio XIAO ESP32C3**
-    - This device is well shielded and comes with an externam IPX antenna connector
+    - This device is shielded and comes with an external IPX antenna connector
     - FCC and CE regulations approved
 
 ## Setup and mounting
@@ -46,7 +46,7 @@ A typical small electic junction box is used for an easy and affordable way for 
     <img src="images/BallValveCtrl-Box.jpg">
 </p>
 
-Please note the positioning of the battery. The battery can be easily removed to provide room for a USB-C cable connection, in case an OTA update should fail.
+Please note the positioning of the battery. The battery can be easily removed to provide room for a USB-C cable connection, in case an OTA update should fail. Failure to OTA is usually recovered by a power cycle, but bugs in OTA libaries need a physical connections for recovery.
 
 The switch (see wiring below) is used to select between normally open and normally closed operation. As the ball valve will return to it's default position during reset, the valve position feedback switches are used to automatically determine if the setup is normally open or normally closed.
 
@@ -133,11 +133,11 @@ git clone --recurse-submodules https://github.com/hansrune/BallValveController.g
 
 ### Materials used
 
-This project uses the [Seed Studio XIAO ESP32C3 RISC-V module](https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html). This tiny device has proven to be more reliable than most ESP8266 modules used in earlier versions. This module also comes with an IPX connector for connecting an external antenna, and is delivered with a simple external antenna for good range.
+This project uses the [Seed Studio XIAO ESP32C3 RISC-V module](https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html). This tiny device has proven to be more reliable than most ESP8266 modules used in earlier versions. This module also comes with an IPX connector for connecting an external antenna, and is delivered with a simple external antenna for good range. This device is also EMI shielded and certified.
 
-A ball valve like [these HSH-FLO valves](https://www.ebay.com/itm/121728665101?var=420727385309) uses metal gears, and also have a manual override possibility. Despite the moderate cost, I have found them very reliable. I typically use a 2 or some times 3-port version, size 3/4" DN20, DC12/24V and with CR05-01 wiring
+A ball valve like [these HSH-FLO valves](https://www.ebay.com/itm/121728665101?var=420727385309) uses metal gears, and also have a manual override possibility. Despite the moderate cost, I have found them very reliable. Manufacturer claims 100k operations. I typically use a 2 or some times 3-port version, size 3/4" DN20, DC12/24V and with CR05-01 wiring, including a manual overrride whell option.
 
-Any available 12V DC power supply over 1A should do.
+Any available 12V DC power supply delivering 1A or more should do.
 
 There are many options and possible pinouts for DC-DC converters for the 12V to 5V conversion. A linear regulator (L7805) will need a heatsink, so a DC-DC converter is recommended.
 
@@ -153,7 +153,7 @@ For more information, use [this KiCad BOM](KiCad/BallValveController-BOM.csv)
 
 ## Hardware assembly
 
-Soldering a prototype by hand is possible if you have a steady hand and a small solder iron tip. A microscope is recommended to propely inspect the solder joints.
+Soldering a prototype by hand is possible if you have a steady hand and a small solder iron tip. A microscope is recommended to inspect the solder joints properly.
 
 Recommend to do the SMD parts first, then other components. I prefer to mount the 5mm LEDs on the back side.
 
@@ -162,7 +162,7 @@ Recommend to do the SMD parts first, then other components. I prefer to mount th
 You should test at least the following **before adding the ESP32 module**:
 
 - Attach a battery and check that the valve can be operated both NO and NC
-- Add a power supply and check that 5V conversion is OK
+- Add power and check that 5V conversion is OK
 - Apply 5V to the ESP32c3 pin 11 to check that the relay is operated
 - Apply 0V to pin 1 of the ESP32c3 and check that pin 2 receives a 200ms readout of the battery voltage (divided by the 68k + 20k resistors)
 
@@ -172,9 +172,9 @@ You should test at least the following **before adding the ESP32 module**:
 
 ESPHome firmware can be set up from [this ESPHome configuration repository](https://github.com/hansrune/esphome-config) using the `test_ball_valve` as a template
 
-Follow the [README](https://github.com/hansrune/esphome-config) for instruction on what you will likely want to change.
+Follow the [README](https://github.com/hansrune/esphome-config) for instructions on what you will likely want to change.
 
-By default, MQTT auto discovery is being used. This should work out og the box with Home Assistant, Domoticz and other that support [Home Assistant MQTT Auto Discovery](https://www.home-assistant.io/integrations/mqtt/#mqtt-discovery)
+By default, MQTT auto discovery is being used. This should work out of the box with Home Assistant, Domoticz and other that support [Home Assistant MQTT Auto Discovery](https://www.home-assistant.io/integrations/mqtt/#mqtt-discovery)
 
 In Home Assistant, the device has these controls:
 
@@ -182,13 +182,11 @@ In Home Assistant, the device has these controls:
     <img src="images/HA-BallValve.jpg">
 </p>
 
-
 ... and information / diagnostics panel:
 
 <p align="center">
     <img src="images/HA-Diags.jpg">
 </p>
-
 
 ### ESPEasy
 
@@ -196,13 +194,17 @@ ESPEasy can be used with a number of different controllers / home automation sys
 
 ESPEasy requires many settings. For configuration settings and rule files, you can upload the files from [this page](./ESPEasy/) as a starting point. Please make sure to change name, unit number, controller IP addresses, NTP, syslog host and latitude/longitude. This configuration uses both a MQTT controller and a Domoticz controller. Change to what you need.
 
-## Known bugs
+## Bugs and tweaks
+
+### For Fibaro Smart Implants
 
 A Fibaro Smart implant needs a 9-30V power supply. To accomodate that, you can supply 12V by running a wire on the back of the PCB as follows:
 
 <p align="center">
     <img src="images/Implant-12V.png">
 </p>
+
+... or just connect to the 12V input terminal
 
 <!-- 
 
