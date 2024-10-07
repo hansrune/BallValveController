@@ -46,7 +46,7 @@ A typical small electic junction box is used for an easy and affordable way for 
     <img src="images/BallValveCtrl-Box.jpg">
 </p>
 
-Please note the positioning of the battery. The battery can be easily removed to provide room for a USB-C cable connection, in case an OTA update should fail. Failure to OTA is usually recovered by a power cycle, but bugs in OTA libaries need a physical connections for recovery.
+Please note the positioning of the battery. The battery can be easily removed to provide room for a USB-C cable connection, in case an OTA update should fail. Failure to OTA is usually recovered by a power cycle, but bugs in OTA libaries need a physical connection for recovery.
 
 The switch (see wiring below) is used to select between normally open and normally closed operation. As the ball valve will return to it's default position during reset, the valve position feedback switches are used to automatically determine if the setup is normally open or normally closed.
 
