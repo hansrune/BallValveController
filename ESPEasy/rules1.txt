@@ -1,0 +1,50 @@
+//
+// PLEASE NOTE: Make sure there is 3 WifiScan loops. They will happen before "System#Boot" event and make sure valve returns to default state
+//
+//  http://${IP}/control?cmd=event,OpenValve
+//  http://${IP}/control?cmd=event,CloseValve
+// 
+// HomeAssistant / MQTT setup:
+//
+//   Controller Subscribe:	espeasy/%sysname%/#
+//   Controller Publish:	espeasy/%sysname%/%tskname%/%valname%
+//   Controller LWT Topic:	espeasy/%sysname%/LWT
+//
+// Events:
+//   mosquitto_pub  -t espeasy/TestVentil_23/cmd_arg1/event -m OpenValve
+//   mosquitto_pub  -t espeasy/TestVentil_23/cmd_arg1/event -m CloseValve
+//
+on System#Boot do
+  // taskvalueset,6,1,1 // Configure this please: DefaultOpen 0=NC 1=NO
+  // event OpenValve
+  // event StatusOK
+
+  // Autodetect NO/NC
+  event Configure
+endon
+
+on WiFi#Connected do
+  LogEntry,"%sysname% ESPEasy: APchange ValveOpen=[ValveOpen#Switch] ValveClosed=[ValveClosed#Switch]"
+  timerset,7,3      
+endon
+
+on Rules#Timer=7 do
+  Event Battery
+  LogEntry,"%sysname% ESPEasy: Connected to %ssid% / %bssid% / %rssi% dB" ValveOpen=[ValveOpen#Switch] ValveClosed=[ValveClosed#Switch] Battery readout is [Battery#Volts]",1
+  timerset,7,3600
+endon
+
+on Battery do
+  LongPulse,2,0,1
+  TaskRun,9
+  taskvalueset,6,3,[Battery#Volts]
+  if [Battery#Volts]>9
+    LogEntry,"%sysname% ESPEasy: Battery OK ([Battery#Volts] volts)"
+  elseif [Battery#Volts]>1
+    LogEntry,"%sysname% ESPEasy: Battery low ([Battery#Volts] volts)",1
+  else
+    LogEntry,"%sysname% ESPEasy: Battery flat or read error ([Battery#Volts] volts)",1
+  endif
+endon
+
+// -- end of rules1.txt --

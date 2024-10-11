@@ -1,0 +1,18 @@
+// Activate watchdog timeout / cancel previous timeout by
+//      http://<ipaddress>/control?cmd=event,SetWatchDog=<seconds>
+
+// Add in reboot event:   taskvalueset,8,2,0 // reset watchdog timeout (rule set 4) as in done
+
+on SetWatchDog do
+  timerSet,8,0 // cancel timer
+  timerSet,8,%eventvalue% // set timeout
+  taskvalueset,8,1,%eventvalue% // so we can read it back
+endon
+
+// Watchdog timer expiry - reboot
+on Rules#Timer=8 do
+  // 183 is local6 debug, 182 info, 181 notice, 180 warning, 179 error, 189 critical, 177 alert, 186 emergency
+  LogEntry,"%sysname% ESPEasy: Watchdog reset",1
+  reboot
+endon
+// -- end of rules4.txt --
