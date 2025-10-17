@@ -103,9 +103,9 @@
         "padstack": "error",
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
-        "silk_edge_clearance": "warning",
+        "silk_edge_clearance": "ignore",
         "silk_over_copper": "warning",
-        "silk_overlap": "warning",
+        "silk_overlap": "ignore",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
         "starved_thermal": "error",
@@ -559,7 +559,7 @@
       },
       {
         "netclass": "SUPPLY",
-        "pattern": "/VBAT"
+        "pattern": "*BAT"
       },
       {
         "netclass": "SUPPLY",
