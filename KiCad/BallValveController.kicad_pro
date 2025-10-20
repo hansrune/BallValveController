@@ -576,6 +576,10 @@
       {
         "netclass": "SUPPLY",
         "pattern": "+5*"
+      },
+      {
+        "netclass": "SUPPLY",
+        "pattern": "/IND*"
       }
     ]
   },

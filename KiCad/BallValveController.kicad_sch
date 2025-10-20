@@ -4855,10 +4855,22 @@
 		(uuid "a5a398c3-f675-4eb8-8d31-5c003a60528b")
 	)
 	(junction
+		(at 64.77 170.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a744bd28-634f-4bf3-b06a-5384a43fcc23")
+	)
+	(junction
 		(at 49.53 189.23)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b06b174a-06cc-45f1-a5ed-c27445a1f05d")
+	)
+	(junction
+		(at 76.2 165.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c32db388-4e2a-4394-90bf-b39d3639d972")
 	)
 	(junction
 		(at 58.42 104.14)
@@ -5138,6 +5150,16 @@
 	)
 	(wire
 		(pts
+			(xy 66.04 165.1) (xy 64.77 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1338c422-0244-49f1-b7d0-053c8976d7b0")
+	)
+	(wire
+		(pts
 			(xy 52.07 189.23) (xy 52.07 182.88)
 		)
 		(stroke
@@ -5155,16 +5177,6 @@
 			(type default)
 		)
 		(uuid "17171050-c9be-4d67-b24a-b5b4661bc6a0")
-	)
-	(wire
-		(pts
-			(xy 62.23 170.18) (xy 66.04 170.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1b0c16bc-9a7a-4ca8-9102-1c849038b2c5")
 	)
 	(wire
 		(pts
@@ -5418,6 +5430,26 @@
 	)
 	(wire
 		(pts
+			(xy 62.23 170.18) (xy 64.77 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42c15fcf-4def-4d8d-8a08-3274597dc74f")
+	)
+	(wire
+		(pts
+			(xy 76.2 165.1) (xy 76.2 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4366fdef-c7f5-483a-ac89-5bd57dbb76af")
+	)
+	(wire
+		(pts
 			(xy 200.66 106.68) (xy 200.66 109.22)
 		)
 		(stroke
@@ -5668,7 +5700,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 158.75) (xy 76.2 170.18)
+			(xy 76.2 158.75) (xy 76.2 165.1)
 		)
 		(stroke
 			(width 0)
@@ -5935,6 +5967,16 @@
 			(type default)
 		)
 		(uuid "8d4f39fe-d72a-47b0-bfa9-39ded4c587e1")
+	)
+	(wire
+		(pts
+			(xy 64.77 170.18) (xy 66.04 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8da675db-0800-4dc8-9269-985c3afb0518")
 	)
 	(wire
 		(pts
@@ -6568,6 +6610,16 @@
 	)
 	(wire
 		(pts
+			(xy 64.77 165.1) (xy 64.77 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e96dee3b-c616-4f52-a4a8-9f91a80098c0")
+	)
+	(wire
+		(pts
 			(xy 168.91 39.37) (xy 172.72 39.37)
 		)
 		(stroke
@@ -6728,6 +6780,16 @@
 	)
 	(wire
 		(pts
+			(xy 73.66 165.1) (xy 76.2 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9f252d8-ae14-4068-b0b7-1001b26fbd8d")
+	)
+	(wire
+		(pts
 			(xy 106.68 41.91) (xy 106.68 68.58)
 		)
 		(stroke
@@ -6805,6 +6867,16 @@
 			(type default)
 		)
 		(uuid "ff9184fb-f48d-42e6-8d6e-3c95f623c5f1")
+	)
+	(label "IND1"
+		(at 64.77 167.64 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0ca81061-25fe-493e-9ee0-1a91e17d0779")
 	)
 	(label "SCL"
 		(at 137.16 53.34 90)
@@ -7902,6 +7974,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8538,7 +8611,7 @@
 		(dnp no)
 		(uuid "20919de3-27f0-4888-adf3-5eb8686ff2ce")
 		(property "Reference" "J6"
-			(at 201.93 140.97 0)
+			(at 196.85 142.494 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8629,7 +8702,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_MiniMELF"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 135.89 109.22 0)
 			(effects
 				(font
@@ -9898,7 +9971,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SMB_Handsoldering"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 85.725 87.63 0)
 			(effects
 				(font
@@ -9992,6 +10065,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "JLCPCB Part#" "C3007555"
@@ -10198,7 +10272,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_MiniMELF"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 135.89 83.82 0)
 			(effects
 				(font
@@ -10517,6 +10591,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "JLCPCB Part#" "C17850"
@@ -11048,10 +11123,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "a75bcd75-7fc0-4abe-9e6e-12c7bb6effce")
 		(property "Reference" "L1"
-			(at 69.85 165.9722 90)
+			(at 69.596 172.212 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11064,9 +11138,10 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_Bourns-SRU8028_8.0x8.0mm"
+		(property "Footprint" "Inductor_SMD:L_2512_6332Metric_Pad1.52x3.35mm_HandSolder"
 			(at 69.85 170.18 0)
 			(effects
 				(font
@@ -11090,6 +11165,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "JLCPCB Part#" "C2929438"
@@ -12071,6 +12147,84 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:L")
+		(at 69.85 165.1 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cce28e60-dadc-4bd5-8cda-9099dd1ae8e6")
+		(property "Reference" "L2"
+			(at 69.85 160.8922 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "L"
+			(at 69.85 163.4291 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Inductor_SMD:L_Bourns-SRU8028_8.0x8.0mm"
+			(at 69.85 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Inductor"
+			(at 69.85 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part#" "C2929438"
+			(at 69.85 165.1 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b4a2a032-2744-471f-839d-602a2c556a8b")
+		)
+		(pin "2"
+			(uuid "c22b0270-28ef-438b-9e08-14a5f6091e40")
+		)
+		(instances
+			(project "BallValveController"
+				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
+					(reference "L2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 167.64 133.35 0)
 		(unit 1)
@@ -12501,7 +12655,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_MiniMELF"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 209.55 134.62 0)
 			(effects
 				(font
@@ -12612,6 +12766,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -12716,7 +12871,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SMB_Handsoldering"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 127.635 166.37 0)
 			(effects
 				(font
@@ -13200,7 +13355,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SMB_Handsoldering"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 227.965 76.2 0)
 			(effects
 				(font
