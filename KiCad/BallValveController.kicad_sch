@@ -8702,7 +8702,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
 			(at 135.89 109.22 0)
 			(effects
 				(font
@@ -10272,7 +10272,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
 			(at 135.89 83.82 0)
 			(effects
 				(font
@@ -12385,7 +12385,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "LOCAL1:XIAO-ESP32-C6-SMD"
+		(property "Footprint" "LOCAL1:XIAO-ESP32-C3C6-SMD"
 			(at 161.29 67.31 0)
 			(effects
 				(font
@@ -12655,7 +12655,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
 			(at 209.55 134.62 0)
 			(effects
 				(font
