@@ -5,9 +5,9 @@
 	(uuid "2a5b3e3c-2022-46db-8938-2c3b2e9edb6d")
 	(paper "A4")
 	(title_block
-		(title "Ball Valve Controller for CR05-02 wiring - ESP32-C3 version")
-		(date "2025-10-26")
-		(rev "8.0.1")
+		(title "Ball Valve Controller for CR05-02 wiring - ESP32-C3/C6")
+		(date "2025-10-28")
+		(rev "8.0.2")
 		(company "Copyright - Hans Rune Bue <email@hansrune.net>")
 		(comment 1 "Hardware is licensed under CERN-OHL-W-2.0")
 		(comment 2 "Project documents are licensed under CC-BY-SA 2.0")
@@ -759,6 +759,113 @@
 						)
 					)
 					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4747,6 +4854,12 @@
 		(uuid "3207103d-abad-4398-bc0b-f4a12c406710")
 	)
 	(junction
+		(at 77.47 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "33335bc0-70ef-4be8-9d01-10df696cc7de")
+	)
+	(junction
 		(at 110.49 31.75)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4837,6 +4950,12 @@
 		(uuid "a1932ea1-fb40-41d8-acce-dc9ee12f1c53")
 	)
 	(junction
+		(at 238.76 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a1af0280-94cd-4033-a4e1-bdef9b0f5641")
+	)
+	(junction
 		(at 90.17 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4859,6 +4978,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b06b174a-06cc-45f1-a5ed-c27445a1f05d")
+	)
+	(junction
+		(at 106.68 170.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "baa705ab-cf75-45a5-a6f6-a41fb9c0571e")
 	)
 	(junction
 		(at 132.08 83.82)
@@ -4915,10 +5040,22 @@
 		(uuid "dc9cf6b1-4507-4566-9f0a-96c97bec9382")
 	)
 	(junction
+		(at 102.87 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dcd61ebb-2558-403a-b556-cfb8558373e1")
+	)
+	(junction
 		(at 86.36 189.23)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e13757ea-a147-4f82-a383-2e39be3ad595")
+	)
+	(junction
+		(at 132.08 160.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e4e57b1d-7851-4fc7-b749-e4d5c78b9434")
 	)
 	(junction
 		(at 76.2 170.18)
@@ -5092,7 +5229,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 154.94) (xy 132.08 162.56)
+			(xy 132.08 154.94) (xy 132.08 160.02)
 		)
 		(stroke
 			(width 0)
@@ -5372,6 +5509,16 @@
 	)
 	(wire
 		(pts
+			(xy 77.47 46.99) (xy 77.47 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "348206f8-b240-4a96-802d-4795b89d5f51")
+	)
+	(wire
+		(pts
 			(xy 48.26 110.49) (xy 48.26 104.14)
 		)
 		(stroke
@@ -5559,6 +5706,16 @@
 			(type default)
 		)
 		(uuid "4f74d2d9-50f9-4846-bdee-f379e86159b1")
+	)
+	(wire
+		(pts
+			(xy 132.08 160.02) (xy 132.08 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "523e2821-b728-4680-ba46-57b520d96611")
 	)
 	(wire
 		(pts
@@ -5902,13 +6059,33 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 93.98) (xy 132.08 93.98)
+			(xy 71.12 46.99) (xy 77.47 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "879ea816-4a09-465f-968c-d574874d8db0")
+	)
+	(wire
+		(pts
+			(xy 90.17 93.98) (xy 102.87 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "88a4c6f3-768f-4484-9c6b-90480e5cc20d")
+	)
+	(wire
+		(pts
+			(xy 238.76 109.22) (xy 232.41 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ad75adf-f741-4d01-b552-715e5e26954c")
 	)
 	(wire
 		(pts
@@ -6012,7 +6189,17 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 41.91) (xy 77.47 48.26)
+			(xy 102.87 93.98) (xy 132.08 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "984d62e3-9bea-4659-a177-f0736bd4b8cf")
+	)
+	(wire
+		(pts
+			(xy 77.47 41.91) (xy 77.47 46.99)
 		)
 		(stroke
 			(width 0)
@@ -6079,6 +6266,16 @@
 			(type default)
 		)
 		(uuid "9faa3d2a-1cc0-4599-af56-55523d8d413a")
+	)
+	(wire
+		(pts
+			(xy 74.93 93.98) (xy 77.47 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9fe99c5d-5a9f-4357-a69e-18c651a1d770")
 	)
 	(wire
 		(pts
@@ -6322,7 +6519,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 109.22) (xy 232.41 109.22)
+			(xy 246.38 109.22) (xy 238.76 109.22)
 		)
 		(stroke
 			(width 0)
@@ -6539,6 +6736,16 @@
 			(type default)
 		)
 		(uuid "e144bcc4-0179-4229-b299-351c092f8cc2")
+	)
+	(wire
+		(pts
+			(xy 132.08 160.02) (xy 138.43 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e247ef6a-758a-4308-a603-5e2c108616c4")
 	)
 	(wire
 		(pts
@@ -7154,7 +7361,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 234.95 132.08 0)
 			(effects
 				(font
@@ -7163,7 +7370,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 229.87 134.62 0)
 			(effects
 				(font
@@ -9162,6 +9369,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 138.43 160.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "30af16d3-2096-42dc-bc1d-f5056a331d7a")
+		(property "Reference" "TP5"
+			(at 140.97 155.4479 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 140.97 157.9879 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm"
+			(at 143.51 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 143.51 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 138.43 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8521084e-7444-4875-9e0d-ed60e18fcca0")
+		)
+		(instances
+			(project "BallValveController"
+				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
+					(reference "TP5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 76.2 182.88 0)
 		(unit 1)
@@ -9394,6 +9668,73 @@
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
 					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 106.68 170.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3cde176b-2d25-4a42-92d4-379c4a2e1c1d")
+		(property "Reference" "TP2"
+			(at 109.22 165.6079 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 109.22 168.1479 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm"
+			(at 111.76 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 111.76 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 106.68 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "38cfd306-9fa3-430e-b07c-62a4d5291830")
+		)
+		(instances
+			(project "BallValveController"
+				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
+					(reference "TP2")
 					(unit 1)
 				)
 			)
@@ -10751,6 +11092,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 238.76 109.22 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "85c889d0-182a-4b7d-bfbc-4c301daaa00b")
+		(property "Reference" "TP4"
+			(at 241.3 104.6479 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 241.3 107.1879 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm"
+			(at 243.84 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 243.84 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 238.76 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "97ebca00-503c-4376-86f0-146d52951023")
+		)
+		(instances
+			(project "BallValveController"
+				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
+					(reference "TP4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Jumper:SolderJumper_3_Open")
 		(at 127 83.82 0)
 		(unit 1)
@@ -11144,7 +11552,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.infineon.com/dgdl/irlml6402pbf.pdf?fileId=5546d462533600a401535668d5c2263c"
+		(property "Datasheet" ""
 			(at 77.47 101.6 0)
 			(effects
 				(font
@@ -11154,7 +11562,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "-3.7A Id, -20V Vds, 65mOhm Rds, P-Channel HEXFET Power MOSFET, SOT-23"
+		(property "Description" ""
 			(at 77.47 101.6 0)
 			(effects
 				(font
@@ -11941,6 +12349,73 @@
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
 					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 74.93 93.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b5ecfbb1-e89c-4d0f-a1c6-5c0d190ed0ae")
+		(property "Reference" "TP1"
+			(at 77.47 89.4079 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 77.47 91.9479 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm"
+			(at 80.01 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 80.01 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 74.93 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7594ac5c-ea1e-4623-9232-2c7c34198c81")
+		)
+		(instances
+			(project ""
+				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
+					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -12779,6 +13254,140 @@
 			(project ""
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
 					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 71.12 46.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d2bc4e10-9c15-420e-b743-4ef64dcd008d")
+		(property "Reference" "TP3"
+			(at 73.66 42.4179 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 73.66 44.9579 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm"
+			(at 76.2 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 76.2 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 71.12 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "17937d6d-fd43-4418-8047-ea853467a8a1")
+		)
+		(instances
+			(project "BallValveController"
+				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
+					(reference "TP3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 102.87 93.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d84851d1-e56c-4de9-ae03-215347a60a8d")
+		(property "Reference" "TP6"
+			(at 105.41 89.4079 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 105.41 91.9479 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm"
+			(at 107.95 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 107.95 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 102.87 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ce1babc4-2d6b-4f62-a5f1-b69146882fe6")
+		)
+		(instances
+			(project "BallValveController"
+				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
+					(reference "TP6")
 					(unit 1)
 				)
 			)

@@ -8,6 +8,7 @@
 *.kicad_pcb-bak
 *.kicad_sch-bak
 *-backups
+*-cache.lib
 *.kicad_prl
 *.sch-bak
 *~
@@ -26,7 +27,9 @@ fp-info-cache
 
 # Exported BOM files
 *.xml
-*.csv
+#*.csv
+
+**/gerber/
 
 # 
 # MacOS
