@@ -7,7 +7,7 @@
 	(title_block
 		(title "Ball Valve Controller for CR05-02 wiring - ESP32-C3/C6")
 		(date "2025-10-28")
-		(rev "8.0.2")
+		(rev "8.1.0")
 		(company "Copyright - Hans Rune Bue <email@hansrune.net>")
 		(comment 1 "Hardware is licensed under CERN-OHL-W-2.0")
 		(comment 2 "Project documents are licensed under CC-BY-SA 2.0")
@@ -3245,6 +3245,199 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Regulator_Switching:TPS562200"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -7.62 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "TPS562200"
+				(at -2.54 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+				(at 1.27 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tps563200.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "2A Synchronous Step-Down Voltage Regulator, Adjustable Output Voltage, 4.5-17V Input Voltage, SOT-23-6"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "step-down dcdc voltage regulator"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOT?23*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TPS562200_0_1"
+				(rectangle
+					(start -7.62 5.08)
+					(end 7.62 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "TPS562200_1_1"
+				(pin power_in line
+					(at -10.16 2.54 0)
+					(length 2.54)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -2.54 0)
+					(length 2.54)
+					(name "EN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 10.16 2.54 180)
+					(length 2.54)
+					(name "SW"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "VBST"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 10.16 -2.54 180)
+					(length 2.54)
+					(name "VFB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Relay:G5V-2"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -4053,245 +4246,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "custom_kicad_lib_sk:MT499A"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U1"
-				(at 2.0194 9.999 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "MT499A"
-				(at 2.0194 7.4621 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Package_SO:TI_SO-PowerPAD-8"
-				(at 1.27 15.24 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2205121200_XI-AN-Aerosemi-Tech-MT2499A_C3007555.pdf"
-				(at 0 21.59 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "JLCPCB Part#" "C3007555"
-				(at 1.27 17.78 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "MT499A_0_1"
-				(rectangle
-					(start -10.16 6.35)
-					(end 7.62 -8.89)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "MT499A_1_1"
-				(pin power_in line
-					(at -12.7 1.27 0)
-					(length 2.54)
-					(name "Vin"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -12.7 -3.81 0)
-					(length 2.54)
-					(name "EN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -2.54 -11.43 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 0 8.89 270)
-					(length 2.54)
-					(name "BS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -11.43 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 8.89 -11.43 180)
-					(length 2.54)
-					(hide yes)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 8.89 -13.97 180)
-					(length 2.54)
-					(hide yes)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 10.16 1.27 180)
-					(length 2.54)
-					(name "SW"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 10.16 -3.81 180)
-					(length 2.54)
-					(name "FB"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:+3.3V"
 			(power)
 			(pin_numbers
@@ -4818,16 +4772,16 @@
 		(uuid "0b88172c-a854-41e0-aa5b-276ff5490fc3")
 	)
 	(junction
+		(at 46.99 189.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1896f6ca-f5e5-4701-a035-e1ab438d42cd")
+	)
+	(junction
 		(at 110.49 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "19df87a1-269a-4c42-a188-e9579df8ec10")
-	)
-	(junction
-		(at 64.77 165.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1b563934-3fe8-4a42-b28d-11c66525b10c")
 	)
 	(junction
 		(at 232.41 109.22)
@@ -4870,12 +4824,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3d816713-8e55-4148-9a62-71edf593333b")
-	)
-	(junction
-		(at 52.07 158.75)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3df8df78-0d19-4358-8fe8-d5ecc847ce8b")
 	)
 	(junction
 		(at 96.52 189.23)
@@ -4944,12 +4892,6 @@
 		(uuid "9154821b-f1c8-4fad-ba37-c10166c27933")
 	)
 	(junction
-		(at 64.77 158.75)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9c4015c1-8662-40fd-9fa4-abd7d35be671")
-	)
-	(junction
 		(at 76.2 177.8)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4978,12 +4920,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "aa837deb-ff84-4eb7-9375-09da43c39e77")
-	)
-	(junction
-		(at 49.53 189.23)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b06b174a-06cc-45f1-a5ed-c27445a1f05d")
 	)
 	(junction
 		(at 106.68 170.18)
@@ -5116,16 +5052,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fdfe7d41-6849-4475-bd9e-4db930b15d8e")
-	)
-	(wire
-		(pts
-			(xy 52.07 148.59) (xy 55.88 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "00240eeb-125a-43de-b7f0-17827d2ea68b")
 	)
 	(wire
 		(pts
@@ -5269,16 +5195,6 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 189.23) (xy 21.59 189.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0fb1405e-8750-4aa1-927d-306be8f6fd92")
-	)
-	(wire
-		(pts
 			(xy 96.52 184.15) (xy 96.52 189.23)
 		)
 		(stroke
@@ -5316,16 +5232,6 @@
 			(type default)
 		)
 		(uuid "1338c422-0244-49f1-b7d0-053c8976d7b0")
-	)
-	(wire
-		(pts
-			(xy 52.07 189.23) (xy 52.07 182.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1557f523-b0ae-4e1d-9d21-434031ccc62e")
 	)
 	(wire
 		(pts
@@ -5399,7 +5305,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 175.26) (xy 35.56 175.26)
+			(xy 36.83 175.26) (xy 35.56 175.26)
 		)
 		(stroke
 			(width 0)
@@ -5476,6 +5382,16 @@
 			(type default)
 		)
 		(uuid "30603eba-73e0-4a0b-828a-b3008a28eebb")
+	)
+	(wire
+		(pts
+			(xy 46.99 189.23) (xy 52.07 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31befe40-7116-409a-a942-7e6b301179c5")
 	)
 	(wire
 		(pts
@@ -5589,16 +5505,6 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 170.18) (xy 64.77 170.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "42c15fcf-4def-4d8d-8a08-3274597dc74f")
-	)
-	(wire
-		(pts
 			(xy 76.2 165.1) (xy 76.2 170.18)
 		)
 		(stroke
@@ -5606,6 +5512,16 @@
 			(type default)
 		)
 		(uuid "4366fdef-c7f5-483a-ac89-5bd57dbb76af")
+	)
+	(wire
+		(pts
+			(xy 57.15 175.26) (xy 71.12 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47c3f087-5da0-4d94-b113-b1c7a420d99a")
 	)
 	(wire
 		(pts
@@ -5636,16 +5552,6 @@
 			(type default)
 		)
 		(uuid "4b835cc0-de26-4444-bf7e-fa3463f1c11a")
-	)
-	(wire
-		(pts
-			(xy 60.96 148.59) (xy 64.77 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4d7fb70a-ab4e-44fd-aa74-71296dcb5fff")
 	)
 	(wire
 		(pts
@@ -5739,6 +5645,16 @@
 	)
 	(wire
 		(pts
+			(xy 64.77 172.72) (xy 64.77 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "57a5b67d-a6e0-45d5-a700-1272e933574c")
+	)
+	(wire
+		(pts
 			(xy 90.17 82.55) (xy 90.17 83.82)
 		)
 		(stroke
@@ -5746,16 +5662,6 @@
 			(type default)
 		)
 		(uuid "57b07d1a-637d-4492-af30-dd01e8a1df88")
-	)
-	(wire
-		(pts
-			(xy 52.07 158.75) (xy 55.88 158.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "57eb1e49-00d4-4cc9-b5d0-b8d22a465496")
 	)
 	(wire
 		(pts
@@ -5816,26 +5722,6 @@
 			(type default)
 		)
 		(uuid "5eea5176-3c7b-4c79-b4d3-add16224d860")
-	)
-	(wire
-		(pts
-			(xy 60.96 158.75) (xy 64.77 158.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5f41b224-df81-440e-81d2-68b426f7635d")
-	)
-	(wire
-		(pts
-			(xy 64.77 148.59) (xy 64.77 158.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "61c9da70-e222-4d77-864d-47491c33ec1f")
 	)
 	(wire
 		(pts
@@ -5909,6 +5795,16 @@
 	)
 	(wire
 		(pts
+			(xy 57.15 172.72) (xy 59.69 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "701bff45-f835-458e-9eca-29f77f604ca9")
+	)
+	(wire
+		(pts
 			(xy 110.49 27.94) (xy 110.49 31.75)
 		)
 		(stroke
@@ -5966,16 +5862,6 @@
 			(type default)
 		)
 		(uuid "757edbec-e9f7-4e3c-a0c6-b7b41bb4b45b")
-	)
-	(wire
-		(pts
-			(xy 52.07 148.59) (xy 52.07 158.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "77013a2f-1f1d-4e2c-8903-01a096d8a9d8")
 	)
 	(wire
 		(pts
@@ -6089,7 +5975,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 170.18) (xy 39.37 170.18)
+			(xy 35.56 170.18) (xy 36.83 170.18)
 		)
 		(stroke
 			(width 0)
@@ -6116,6 +6002,16 @@
 			(type default)
 		)
 		(uuid "8ed21f03-c7bc-4e64-8097-394759329f70")
+	)
+	(wire
+		(pts
+			(xy 57.15 170.18) (xy 64.77 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "901731f0-3c5f-4478-9127-35b05e294da5")
 	)
 	(wire
 		(pts
@@ -6146,16 +6042,6 @@
 			(type default)
 		)
 		(uuid "93ad9fec-47cf-4b00-9a67-20df9e11105a")
-	)
-	(wire
-		(pts
-			(xy 52.07 158.75) (xy 52.07 162.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "94c99b4c-e2ab-4980-a328-d9cc61577c93")
 	)
 	(wire
 		(pts
@@ -6246,6 +6132,16 @@
 			(type default)
 		)
 		(uuid "9f1db87d-a80c-49e4-8a49-645929da23f3")
+	)
+	(wire
+		(pts
+			(xy 64.77 170.18) (xy 64.77 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f89dc5b-4e88-4bb5-bc38-31eae01f1c5c")
 	)
 	(wire
 		(pts
@@ -6366,16 +6262,6 @@
 			(type default)
 		)
 		(uuid "ac8b8110-4db7-48da-a572-01c776b98ec2")
-	)
-	(wire
-		(pts
-			(xy 64.77 158.75) (xy 64.77 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ad57eac5-cb78-4a98-9555-8ded87e5888b")
 	)
 	(wire
 		(pts
@@ -6589,16 +6475,6 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 189.23) (xy 49.53 189.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d36913bc-45a8-4a4f-ad6e-81b6a409f47a")
-	)
-	(wire
-		(pts
 			(xy 214.63 154.94) (xy 214.63 143.51)
 		)
 		(stroke
@@ -6769,16 +6645,6 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 165.1) (xy 64.77 170.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e96dee3b-c616-4f52-a4a8-9f91a80098c0")
-	)
-	(wire
-		(pts
 			(xy 168.91 39.37) (xy 172.72 39.37)
 		)
 		(stroke
@@ -6869,6 +6735,16 @@
 	)
 	(wire
 		(pts
+			(xy 46.99 189.23) (xy 21.59 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4c0a13a-65ff-40f2-b822-8af4ed820514")
+	)
+	(wire
+		(pts
 			(xy 86.36 176.53) (xy 86.36 170.18)
 		)
 		(stroke
@@ -6886,16 +6762,6 @@
 			(type default)
 		)
 		(uuid "f67c5b30-6516-474a-904b-038699c30f20")
-	)
-	(wire
-		(pts
-			(xy 62.23 175.26) (xy 71.12 175.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f6a396a6-f402-498c-bb37-de3a28616318")
 	)
 	(wire
 		(pts
@@ -7009,7 +6875,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 182.88) (xy 49.53 189.23)
+			(xy 46.99 180.34) (xy 46.99 189.23)
 		)
 		(stroke
 			(width 0)
@@ -9453,7 +9319,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "15k"
+		(property "Value" "12k"
 			(at 77.978 184.5822 0)
 			(effects
 				(font
@@ -10576,106 +10442,6 @@
 		)
 	)
 	(symbol
-		(lib_id "custom_kicad_lib_sk:MT499A")
-		(at 52.07 171.45 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6fa1b514-abce-44a2-9a04-531daba6c159")
-		(property "Reference" "U1"
-			(at 54.0894 161.451 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MT2499A"
-			(at 54.0894 163.9879 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:TI_SO-PowerPAD-8"
-			(at 53.34 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2205121200_XI-AN-Aerosemi-Tech-MT2499A_C3007555.pdf"
-			(at 52.07 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 52.07 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB Part#" "C3007555"
-			(at 53.34 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "10c9ee43-ca61-444b-b3e9-b0d8660e4a4a")
-		)
-		(pin "2"
-			(uuid "c23ea3f2-618e-477c-86b3-9e2cb821a8ef")
-		)
-		(pin "3"
-			(uuid "e64d1ef5-294d-4a0e-8f1c-89166c9891d1")
-		)
-		(pin "4"
-			(uuid "0063089e-4dab-49f5-ad68-f331207ffa20")
-		)
-		(pin "5"
-			(uuid "f2c275c4-c756-457a-839c-58b6f7ef6f89")
-		)
-		(pin "6"
-			(uuid "add95e6a-0f18-46f4-b27b-9a0e7a1aa38f")
-		)
-		(pin "7"
-			(uuid "afc72ac4-556d-450b-b144-66d4a694cf86")
-		)
-		(pin "8"
-			(uuid "929120b8-5e4b-45fa-b802-e82af256f6ab")
-		)
-		(pin "9"
-			(uuid "005559bb-d39f-4d7a-9e77-b11b4477ac97")
-		)
-		(instances
-			(project "BallValveController"
-				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 172.72 101.6 0)
 		(unit 1)
@@ -11517,6 +11283,87 @@
 		)
 	)
 	(symbol
+		(lib_id "Regulator_Switching:TPS562200")
+		(at 46.99 172.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9b40e793-83c3-4113-8e74-80467e18d817")
+		(property "Reference" "U4"
+			(at 46.99 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPS561201 or 08"
+			(at 46.99 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+			(at 48.26 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tps563200.pdf"
+			(at 46.99 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "2A Synchronous Step-Down Voltage Regulator, Adjustable Output Voltage, 4.5-17V Input Voltage, SOT-23-6"
+			(at 46.99 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "e49c5726-e386-4ad2-aad0-24f62c80ea70")
+		)
+		(pin "6"
+			(uuid "cf29d53c-c440-4be3-8031-c4bb60f80db2")
+		)
+		(pin "2"
+			(uuid "42f0164a-b39a-4311-8d14-71ae03bf5fab")
+		)
+		(pin "5"
+			(uuid "b0810177-7233-4ebd-bac8-3f64c9dd158d")
+		)
+		(pin "1"
+			(uuid "67cce229-268a-45a5-b5c1-97821695854e")
+		)
+		(pin "4"
+			(uuid "43b7a3ae-7c36-41d6-8983-9fd78fb13508")
+		)
+		(instances
+			(project ""
+				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
+					(reference "U4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Transistor_FET:IRLML6402")
 		(at 77.47 101.6 90)
 		(mirror x)
@@ -11824,7 +11671,7 @@
 				)
 			)
 		)
-		(property "Value" "10uH"
+		(property "Value" "4.7uH"
 			(at 69.85 168.5091 90)
 			(effects
 				(font
@@ -12019,16 +11866,15 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 58.42 148.59 90)
+		(at 62.23 172.72 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "a9bc5b76-d55c-49dd-97eb-466234ca1e98")
 		(property "Reference" "C2"
-			(at 58.4263 142.24 90)
+			(at 59.69 171.704 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12036,7 +11882,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 58.4263 144.78 90)
+			(at 66.04 173.736 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12044,7 +11890,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 58.42 148.59 0)
+			(at 62.23 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12053,7 +11899,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 58.42 148.59 0)
+			(at 62.23 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12062,7 +11908,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 58.42 148.59 0)
+			(at 62.23 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12852,15 +12698,15 @@
 		(fields_autoplaced yes)
 		(uuid "cce28e60-dadc-4bd5-8cda-9099dd1ae8e6")
 		(property "Reference" "L2"
-			(at 69.85 160.8922 90)
+			(at 69.85 160.02 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "22uH"
-			(at 69.85 163.4291 90)
+		(property "Value" "10uH"
+			(at 69.85 162.56 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13736,83 +13582,6 @@
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
 					(reference "D2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 58.42 158.75 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e89b95d7-b9b2-430d-ad55-eb48af191459")
-		(property "Reference" "C3"
-			(at 58.4263 152.4 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "22nF"
-			(at 58.4263 154.94 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 58.42 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 58.42 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 58.42 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB Part#" "C1729"
-			(at 58.42 158.75 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "80588e5a-76a8-4881-849b-4af302a30fbd")
-		)
-		(pin "2"
-			(uuid "14c43aa1-6d4a-4ecb-b74c-bd64b559bf67")
-		)
-		(instances
-			(project "BallValveController"
-				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "C3")
 					(unit 1)
 				)
 			)
