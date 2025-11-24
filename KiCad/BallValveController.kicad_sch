@@ -4781,13 +4781,13 @@
 		)
 		(uuid "05eb9951-77e9-4707-9b20-09f243e13b70")
 	)
-	(text "GPIO0/D0   - /BAT READ\nGPIO1/A1   - BAT Vin\nGPIO2/D2   - /VOPEN\nGPIO21/D3  - /VCLOSE\nGPIO22/D4  - I2C SDA\nGPIO23/D5  - I2C SCL\nGPIO20/D9  - ILED\nGPIO18/D10 - VALVE\nGPIO17/D7  - RX / 1-wire\nGPIO16/D6  - TX / 1-wire\n\n"
+	(text "C3:\n  GPIO0/D0   - /BAT READ\n  GPIO1/A1   - BAT Vin\n  GPIO2/D2   - /VOPEN\n  GPIO21/D3  - /VCLOSE\n  GPIO22/D4  - I2C SDA\n  GPIO23/D5  - I2C SCL\n  GPIO20/D9  - ILED\n  GPIO18/D10 - VALVE\n  GPIO17/D7  - RX / 1-wire\n  GPIO16/D6  - TX / 1-wire\n\n  GPIO3      - /Antenna chip\n  GPIO14     - H=ext antenna\n  GPIO15     - Module yellow LED\n\n  Avoid 4,5,8,9,15\n\n"
 		(exclude_from_sim no)
-		(at 233.426 59.182 0)
+		(at 14.732 96.52 0)
 		(effects
 			(font
 				(face "Andale Mono")
-				(size 2.54 2.54)
+				(size 2 2)
 			)
 			(justify left bottom)
 		)
@@ -4824,6 +4824,12 @@
 		(uuid "19df87a1-269a-4c42-a188-e9579df8ec10")
 	)
 	(junction
+		(at 64.77 165.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1b563934-3fe8-4a42-b28d-11c66525b10c")
+	)
+	(junction
 		(at 232.41 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4846,12 +4852,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2f0c2afa-ee1e-4b5b-9b71-9bc6e3092aac")
-	)
-	(junction
-		(at 76.2 158.75)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3207103d-abad-4398-bc0b-f4a12c406710")
 	)
 	(junction
 		(at 77.47 46.99)
@@ -4944,6 +4944,12 @@
 		(uuid "9154821b-f1c8-4fad-ba37-c10166c27933")
 	)
 	(junction
+		(at 64.77 158.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9c4015c1-8662-40fd-9fa4-abd7d35be671")
+	)
+	(junction
 		(at 76.2 177.8)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4990,12 +4996,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c205f5b6-95b8-4983-b288-f011447cbf6f")
-	)
-	(junction
-		(at 76.2 165.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c32db388-4e2a-4394-90bf-b39d3639d972")
 	)
 	(junction
 		(at 58.42 104.14)
@@ -5119,7 +5119,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 148.59) (xy 60.96 148.59)
+			(xy 52.07 148.59) (xy 55.88 148.59)
 		)
 		(stroke
 			(width 0)
@@ -5639,7 +5639,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 148.59) (xy 76.2 148.59)
+			(xy 60.96 148.59) (xy 64.77 148.59)
 		)
 		(stroke
 			(width 0)
@@ -5749,7 +5749,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 158.75) (xy 60.96 158.75)
+			(xy 52.07 158.75) (xy 55.88 158.75)
 		)
 		(stroke
 			(width 0)
@@ -5819,7 +5819,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 158.75) (xy 76.2 158.75)
+			(xy 60.96 158.75) (xy 64.77 158.75)
 		)
 		(stroke
 			(width 0)
@@ -5829,7 +5829,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 148.59) (xy 76.2 158.75)
+			(xy 64.77 148.59) (xy 64.77 158.75)
 		)
 		(stroke
 			(width 0)
@@ -5846,16 +5846,6 @@
 			(type default)
 		)
 		(uuid "629d0a59-650d-44bb-aba4-07b5de2e5891")
-	)
-	(wire
-		(pts
-			(xy 76.2 158.75) (xy 76.2 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6515bea5-87ff-4b79-842d-676f20c75cb6")
 	)
 	(wire
 		(pts
@@ -6376,6 +6366,16 @@
 			(type default)
 		)
 		(uuid "ac8b8110-4db7-48da-a572-01c776b98ec2")
+	)
+	(wire
+		(pts
+			(xy 64.77 158.75) (xy 64.77 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad57eac5-cb78-4a98-9555-8ded87e5888b")
 	)
 	(wire
 		(pts
@@ -9453,7 +9453,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "20k"
+		(property "Value" "15k"
 			(at 77.978 184.5822 0)
 			(effects
 				(font
@@ -9486,6 +9486,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "JLCPCB Part#" "C4328"
@@ -11249,7 +11250,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "88k7"
+		(property "Value" "68k"
 			(at 77.978 175.6922 0)
 			(effects
 				(font
@@ -11823,16 +11824,15 @@
 				)
 			)
 		)
-		(property "Value" "L"
+		(property "Value" "10uH"
 			(at 69.85 168.5091 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_2512_6332Metric_Pad1.52x3.35mm_HandSolder"
+		(property "Footprint" "Inductor_SMD:L_2010_5025Metric_Pad1.52x2.65mm_HandSolder"
 			(at 69.85 170.18 0)
 			(effects
 				(font
@@ -12019,7 +12019,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 63.5 148.59 90)
+		(at 58.42 148.59 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12028,7 +12028,7 @@
 		(fields_autoplaced yes)
 		(uuid "a9bc5b76-d55c-49dd-97eb-466234ca1e98")
 		(property "Reference" "C2"
-			(at 63.5063 142.24 90)
+			(at 58.4263 142.24 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12036,7 +12036,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 63.5063 144.78 90)
+			(at 58.4263 144.78 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12044,7 +12044,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 63.5 148.59 0)
+			(at 58.42 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12053,7 +12053,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 63.5 148.59 0)
+			(at 58.42 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12062,7 +12062,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 63.5 148.59 0)
+			(at 58.42 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12859,13 +12859,12 @@
 				)
 			)
 		)
-		(property "Value" "L"
+		(property "Value" "22uH"
 			(at 69.85 163.4291 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_Bourns-SRU8028_8.0x8.0mm"
@@ -13744,7 +13743,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 63.5 158.75 90)
+		(at 58.42 158.75 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13753,7 +13752,7 @@
 		(fields_autoplaced yes)
 		(uuid "e89b95d7-b9b2-430d-ad55-eb48af191459")
 		(property "Reference" "C3"
-			(at 63.5063 152.4 90)
+			(at 58.4263 152.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13761,7 +13760,7 @@
 			)
 		)
 		(property "Value" "22nF"
-			(at 63.5063 154.94 90)
+			(at 58.4263 154.94 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13769,7 +13768,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 63.5 158.75 0)
+			(at 58.42 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13778,7 +13777,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 63.5 158.75 0)
+			(at 58.42 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13787,7 +13786,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 63.5 158.75 0)
+			(at 58.42 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13796,7 +13795,7 @@
 			)
 		)
 		(property "JLCPCB Part#" "C1729"
-			(at 63.5 158.75 90)
+			(at 58.42 158.75 90)
 			(effects
 				(font
 					(size 1.27 1.27)
