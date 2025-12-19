@@ -596,6 +596,10 @@
       {
         "netclass": "Supply1",
         "pattern": ""
+      },
+      {
+        "netclass": "Supply2",
+        "pattern": "/IND*"
       }
     ]
   },

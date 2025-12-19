@@ -4832,12 +4832,6 @@
 		(uuid "404517e6-a030-4504-aaba-c30b10f18d21")
 	)
 	(junction
-		(at 35.56 170.18)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "478c4a9c-c73a-4a0b-ae8b-4ab2f61548e0")
-	)
-	(junction
 		(at 167.64 133.35)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4854,6 +4848,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4f862779-dd19-42a3-aa56-2e8dfbfdbc21")
+	)
+	(junction
+		(at 31.75 170.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5a97e2a1-ff49-48cd-9981-05f238c0b2e2")
+	)
+	(junction
+		(at 26.67 170.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6b3053fd-fd1e-402e-b658-49d1681aba86")
 	)
 	(junction
 		(at 137.16 44.45)
@@ -4890,6 +4896,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9154821b-f1c8-4fad-ba37-c10166c27933")
+	)
+	(junction
+		(at 26.67 189.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "96a96fa7-9bbd-4584-93f9-810282a91ba1")
 	)
 	(junction
 		(at 76.2 177.8)
@@ -5345,6 +5357,16 @@
 	)
 	(wire
 		(pts
+			(xy 26.67 170.18) (xy 31.75 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28cca517-1a9c-4a26-acc6-3c9ca8c8e682")
+	)
+	(wire
+		(pts
 			(xy 139.7 41.91) (xy 139.7 46.99)
 		)
 		(stroke
@@ -5462,6 +5484,16 @@
 			(type default)
 		)
 		(uuid "36b070c3-6184-472e-97d5-dcdb16e25b0a")
+	)
+	(wire
+		(pts
+			(xy 35.56 175.26) (xy 35.56 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3835f208-09b9-402d-9abd-c4e74e0f1a71")
 	)
 	(wire
 		(pts
@@ -5642,6 +5674,16 @@
 			(type default)
 		)
 		(uuid "52fd2df2-3c0f-4f7f-a939-08169c148d33")
+	)
+	(wire
+		(pts
+			(xy 26.67 189.23) (xy 21.59 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55603092-3ecd-4608-95c1-41d5949c5f45")
 	)
 	(wire
 		(pts
@@ -5975,7 +6017,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 170.18) (xy 36.83 170.18)
+			(xy 31.75 170.18) (xy 36.83 170.18)
 		)
 		(stroke
 			(width 0)
@@ -6052,16 +6094,6 @@
 			(type default)
 		)
 		(uuid "94ccc055-41e2-4dae-ba65-9eb965ce4763")
-	)
-	(wire
-		(pts
-			(xy 35.56 170.18) (xy 35.56 175.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "95f50326-4d69-49dd-b279-affebaa23ae3")
 	)
 	(wire
 		(pts
@@ -6695,6 +6727,16 @@
 	)
 	(wire
 		(pts
+			(xy 31.75 177.8) (xy 35.56 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed952c6b-6111-4f8f-847e-d1268ab89bd9")
+	)
+	(wire
+		(pts
 			(xy 137.16 99.06) (xy 137.16 106.68)
 		)
 		(stroke
@@ -6735,7 +6777,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 189.23) (xy 21.59 189.23)
+			(xy 46.99 189.23) (xy 26.67 189.23)
 		)
 		(stroke
 			(width 0)
@@ -6835,7 +6877,7 @@
 	)
 	(wire
 		(pts
-			(xy 21.59 170.18) (xy 35.56 170.18)
+			(xy 21.59 170.18) (xy 26.67 170.18)
 		)
 		(stroke
 			(width 0)
@@ -6872,6 +6914,16 @@
 			(type default)
 		)
 		(uuid "fe15467f-1f33-4d9e-8ab1-55e255187185")
+	)
+	(wire
+		(pts
+			(xy 26.67 177.8) (xy 26.67 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe7ecbd1-71a4-4951-b563-6dd96bed9064")
 	)
 	(wire
 		(pts
@@ -8430,10 +8482,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "198cc7c0-77cd-4738-a153-b592d9baaba4")
 		(property "Reference" "C8"
-			(at 25.4 171.8309 0)
+			(at 16.002 173.736 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8442,7 +8493,7 @@
 			)
 		)
 		(property "Value" "22uF"
-			(at 25.4 174.3709 0)
+			(at 16.256 176.276 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9459,6 +9510,84 @@
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
 					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 31.75 173.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "34ba2c27-68ea-4195-bfca-de6b8db47f50")
+		(property "Reference" "R12"
+			(at 29.972 179.324 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 30.226 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 29.972 173.99 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 31.75 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 31.75 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part#" "C4328"
+			(at 31.75 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1738a9a4-e107-49df-8624-4e0043d2f485")
+		)
+		(pin "2"
+			(uuid "c74d0808-5b03-4717-ada2-6bec8c5fd30e")
+		)
+		(instances
+			(project "BallValveController"
+				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -11300,7 +11429,7 @@
 				)
 			)
 		)
-		(property "Value" "TPS561201 or 08"
+		(property "Value" "TPS561201/08 or TPS563200"
 			(at 46.99 165.1 0)
 			(effects
 				(font
@@ -12195,6 +12324,75 @@
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
 					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 26.67 173.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b5182a2c-af96-4350-a68e-b8f84fbf1487")
+		(property "Reference" "C1"
+			(at 24.13 176.276 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22uF"
+			(at 26.67 176.276 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+			(at 27.6352 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 26.67 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 26.67 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "28fadae4-cf0b-4abe-a129-855fc5c857e9")
+		)
+		(pin "1"
+			(uuid "6ef0a82e-ace9-4ae9-9a7b-cc0237eafaba")
+		)
+		(instances
+			(project "BallValveController"
+				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
+					(reference "C1")
 					(unit 1)
 				)
 			)
