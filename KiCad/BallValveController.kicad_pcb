@@ -19231,8 +19231,9 @@
 	(zone
 		(net 1)
 		(net_name "GND")
-		(layers "F.Cu" "B.Cu")
+		(layer "B.Cu")
 		(uuid "19aeeaf7-1fbd-4e18-a12d-64dfa616771b")
+		(name "BZoneGND")
 		(hatch edge 0.508)
 		(connect_pads
 			(clearance 0.508)
