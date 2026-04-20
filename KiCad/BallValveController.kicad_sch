@@ -13,125 +13,6 @@
 		(comment 2 "Project documents are licensed under CC-BY-SA 2.0")
 	)
 	(lib_symbols
-		(symbol "Connector:Conn_01x01_Male"
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "J"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Conn_01x01_Male"
-				(at 0 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "connector"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Conn_01x01_Male_1_1"
-				(rectangle
-					(start 0.8636 0.127)
-					(end 0 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy 0.8636 0)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Connector:Conn_01x04_Pin"
 			(pin_names
 				(offset 1.016)
@@ -3719,153 +3600,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Regulator_Linear:L7805"
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at -3.81 3.175 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "L7805"
-				(at 0 3.175 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0.635 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(justify left)
-				)
-			)
-			(property "Datasheet" "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf"
-				(at 0 -1.27 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Positive 1.5A 35V Linear Regulator, Fixed Output 5V, TO-220/TO-263/TO-252"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "Voltage Regulator 1.5A Positive"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "L7805_0_1"
-				(rectangle
-					(start -5.08 1.905)
-					(end 5.08 -5.08)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "L7805_1_1"
-				(pin power_in line
-					(at -7.62 0 0)
-					(length 2.54)
-					(name "IN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -7.62 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "OUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Regulator_Switching:TPS562200"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -4598,6 +4332,265 @@
 						)
 					)
 					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Screw_Terminal_01x03_1"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Screw_Terminal_01x03"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic screw terminal, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "screw terminal"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "TerminalBlock*:*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Screw_Terminal_01x03_1_1_1"
+				(rectangle
+					(start -1.27 3.81)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.5334 2.8702) (xy 0.3302 2.032)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.5334 0.3302) (xy 0.3302 -0.508)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.5334 -2.2098) (xy 0.3302 -3.048)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.3556 3.048) (xy 0.508 2.2098)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.3556 0.508) (xy 0.508 -0.3302)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.3556 -2.032) (xy 0.508 -2.8702)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 2.54)
+					(radius 0.635)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 0.635)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 -2.54)
+					(radius 0.635)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5541,12 +5534,6 @@
 		(uuid "36f04e3b-b6ae-4eac-81ef-94e276cfb22e")
 	)
 	(junction
-		(at 157.48 176.53)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3d816713-8e55-4148-9a62-71edf593333b")
-	)
-	(junction
 		(at 76.2 165.1)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5787,12 +5774,6 @@
 		(uuid "ea23f119-b66f-42e2-9bbb-56c07fb4124d")
 	)
 	(junction
-		(at 132.08 176.53)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ed515881-f5b2-4686-9d4b-9cf9088627d7")
-	)
-	(junction
 		(at 196.85 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5815,6 +5796,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f3ea853b-da9c-4058-9141-9be3ab6331ae")
+	)
+	(junction
+		(at 132.08 176.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f6a3ccb9-e6ca-4c45-9659-931814d6b527")
 	)
 	(junction
 		(at 144.78 83.82)
@@ -6052,6 +6039,16 @@
 	)
 	(wire
 		(pts
+			(xy 132.08 176.53) (xy 143.51 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1510e097-b510-4560-a6b7-7cdbe8afe3dc")
+	)
+	(wire
+		(pts
 			(xy 224.79 149.86) (xy 218.44 149.86)
 		)
 		(stroke
@@ -6139,16 +6136,6 @@
 			(type default)
 		)
 		(uuid "2539cb48-8f8d-4c4e-b6ac-d2237f205b54")
-	)
-	(wire
-		(pts
-			(xy 157.48 176.53) (xy 157.48 173.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "270bb7fc-38d9-409f-9988-f35726f5ac97")
 	)
 	(wire
 		(pts
@@ -6552,16 +6539,6 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 176.53) (xy 132.08 176.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "59a13100-a5d0-4346-918b-7d0612ecf423")
-	)
-	(wire
-		(pts
 			(xy 190.5 154.94) (xy 195.58 154.94)
 		)
 		(stroke
@@ -6632,6 +6609,16 @@
 	)
 	(wire
 		(pts
+			(xy 143.51 179.07) (xy 140.97 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6500f1e3-75f8-45ec-8fd6-7cf6055a0583")
+	)
+	(wire
+		(pts
 			(xy 35.56 185.42) (xy 35.56 189.23)
 		)
 		(stroke
@@ -6649,16 +6636,6 @@
 			(type default)
 		)
 		(uuid "69957928-0a88-47b2-8591-3d142b821d07")
-	)
-	(wire
-		(pts
-			(xy 146.05 187.96) (xy 146.05 184.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6aec1ee6-c9a6-4922-8a2e-61a175d8035f")
 	)
 	(wire
 		(pts
@@ -6752,6 +6729,16 @@
 	)
 	(wire
 		(pts
+			(xy 140.97 179.07) (xy 140.97 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72e52dd6-2dba-4d6a-aceb-cad5f3337411")
+	)
+	(wire
+		(pts
 			(xy 139.7 46.99) (xy 139.7 76.2)
 		)
 		(stroke
@@ -6779,6 +6766,16 @@
 			(type default)
 		)
 		(uuid "757edbec-e9f7-4e3c-a0c6-b7b41bb4b45b")
+	)
+	(wire
+		(pts
+			(xy 138.43 171.45) (xy 138.43 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78cfd6c5-467f-4435-b41b-d744f1eb5e08")
 	)
 	(wire
 		(pts
@@ -7162,16 +7159,6 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 176.53) (xy 157.48 176.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aa3eef75-7ca0-4915-8520-3c5312c4281c")
-	)
-	(wire
-		(pts
 			(xy 232.41 72.39) (xy 232.41 67.31)
 		)
 		(stroke
@@ -7239,16 +7226,6 @@
 			(type default)
 		)
 		(uuid "b19d4c06-e48e-4380-a00c-04be4085f5a2")
-	)
-	(wire
-		(pts
-			(xy 153.67 176.53) (xy 157.48 176.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b5b98d18-92b0-45e4-a464-abeb3e63c67f")
 	)
 	(wire
 		(pts
@@ -7469,6 +7446,16 @@
 			(type default)
 		)
 		(uuid "d66096c9-331e-438f-98fb-1a5c4bf02e8b")
+	)
+	(wire
+		(pts
+			(xy 138.43 181.61) (xy 143.51 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6c01aae-66e7-4642-8858-fc8faebd13e3")
 	)
 	(wire
 		(pts
@@ -8111,7 +8098,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005e4b7f75")
-		(property "Reference" "R7"
+		(property "Reference" "R9"
 			(at 106.68 41.91 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8186,7 +8173,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "R7")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -8203,7 +8190,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005e4b88d1")
-		(property "Reference" "R8"
+		(property "Reference" "R10"
 			(at 110.49 41.91 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8267,7 +8254,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "R8")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -8368,7 +8355,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005e4d15b0")
-		(property "Reference" "R14"
+		(property "Reference" "R18"
 			(at 217.17 132.08 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8430,7 +8417,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "R14")
+					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -8447,7 +8434,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005e4d15ba")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR034"
 			(at 232.41 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -8507,7 +8494,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "#PWR036")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -8524,7 +8511,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005e4d15ce")
-		(property "Reference" "D7"
+		(property "Reference" "D8"
 			(at 231.5972 79.0194 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8599,7 +8586,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "D7")
+					(reference "D8")
 					(unit 1)
 				)
 			)
@@ -8616,7 +8603,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005e4d15d8")
-		(property "Reference" "R15"
+		(property "Reference" "R19"
 			(at 223.52 71.12 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8680,7 +8667,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "R15")
+					(reference "R19")
 					(unit 1)
 				)
 			)
@@ -8697,7 +8684,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005e54d7a3")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR011"
 			(at 110.49 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -8757,91 +8744,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "#PWR010")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Regulator_Linear:L7805")
-		(at 146.05 176.53 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005e5fa746")
-		(property "Reference" "U2"
-			(at 146.05 170.3832 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "L7805"
-			(at 146.05 172.6946 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
-			(at 146.685 180.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-			)
-		)
-		(property "Datasheet" "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf"
-			(at 146.05 177.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Positive 1.5A 35V Linear Regulator, Fixed Output 5V, TO-220/TO-263/TO-252"
-			(at 146.05 176.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "249e7911-844a-4aaa-9f5e-28914a1c272d")
-		)
-		(pin "2"
-			(uuid "80eaff05-b768-40b7-bc63-f658004f94d2")
-		)
-		(pin "3"
-			(uuid "27130086-016d-4007-bd5e-81ca5ffa5ea0")
-		)
-		(instances
-			(project "BallValveController"
-				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "U2")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -8849,7 +8752,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 146.05 187.96 0)
+		(at 140.97 185.42 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8858,8 +8761,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005e603f34")
-		(property "Reference" "#PWR019"
-			(at 146.05 194.31 0)
+		(property "Reference" "#PWR020"
+			(at 140.97 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8870,7 +8773,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 146.177 192.3542 0)
+			(at 141.097 189.8142 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8880,7 +8783,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 146.05 187.96 0)
+			(at 140.97 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8891,7 +8794,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 146.05 187.96 0)
+			(at 140.97 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8902,7 +8805,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 146.05 187.96 0)
+			(at 140.97 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8918,7 +8821,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "#PWR019")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -8935,7 +8838,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005e660dd9")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR017"
 			(at 134.62 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -8995,7 +8898,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "#PWR016")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -9012,7 +8915,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005e6d114c")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR015"
 			(at 132.08 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -9072,7 +8975,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "#PWR013")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -9080,7 +8983,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 157.48 173.99 0)
+		(at 138.43 171.45 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9089,8 +8992,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005e6fca55")
-		(property "Reference" "#PWR021"
-			(at 157.48 177.8 0)
+		(property "Reference" "#PWR018"
+			(at 138.43 175.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9101,7 +9004,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 157.861 169.5958 0)
+			(at 138.811 167.0558 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9111,7 +9014,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 157.48 173.99 0)
+			(at 138.43 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9122,7 +9025,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 157.48 173.99 0)
+			(at 138.43 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9133,7 +9036,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 157.48 173.99 0)
+			(at 138.43 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9149,7 +9052,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "#PWR021")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -9167,7 +9070,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "04e0d033-de54-4add-9233-80bbb05dc2cf")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR08"
 			(at 99.06 173.99 0)
 			(hide yes)
 			(show_name no)
@@ -9227,7 +9130,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "#PWR07")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -9244,7 +9147,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "06a92aaa-3af8-4a04-991b-a1141acf14d4")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR026"
 			(at 203.2 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -9304,7 +9207,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "#PWR028")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -9321,7 +9224,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0c94705a-c6fb-434d-a9c3-86db526ce1ac")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR031"
 			(at 220.98 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -9381,7 +9284,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "#PWR033")
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -9398,7 +9301,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0d76b09e-5352-47f6-907f-7b6d8efed177")
-		(property "Reference" "D6"
+		(property "Reference" "D7"
 			(at 213.8172 58.6994 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9473,7 +9376,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "D6")
+					(reference "D7")
 					(unit 1)
 				)
 			)
@@ -9490,7 +9393,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0faaedf1-6b86-4e8c-8aab-ff47eadbbef8")
-		(property "Reference" "R10"
+		(property "Reference" "R13"
 			(at 139.7 41.91 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9554,7 +9457,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "R10")
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -9572,7 +9475,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "11a1d033-e3f5-43e8-a24d-162896f694e3")
-		(property "Reference" "C3"
+		(property "Reference" "C5"
 			(at 82.55 137.1662 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9636,7 +9539,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "C3")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -9653,7 +9556,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "17323872-88f2-49c2-b984-7a3c37d8886d")
-		(property "Reference" "#PWR023"
+		(property "Reference" "#PWR021"
 			(at 167.64 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -9713,7 +9616,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "#PWR023")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -9731,7 +9634,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "18a4c305-9921-436e-b80e-8327be7e377e")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR014"
 			(at 132.08 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -9791,7 +9694,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "#PWR012")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -9808,7 +9711,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "198cc7c0-77cd-4738-a153-b592d9baaba4")
-		(property "Reference" "C8"
+		(property "Reference" "C1"
 			(at 16.002 173.736 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9872,7 +9775,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "C8")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -9889,7 +9792,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "19d7c81c-93f1-43bb-bec5-14de455f1887")
-		(property "Reference" "R5"
+		(property "Reference" "R7"
 			(at 77.47 55.88 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9953,7 +9856,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "R5")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -9970,7 +9873,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1a991681-6419-4a1c-8634-3c9a78d22fdd")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR02"
 			(at 48.26 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -10030,7 +9933,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "#PWR01")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -10047,7 +9950,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1ae60820-faba-4706-b8c5-6790276bbd1c")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR035"
 			(at 257.81 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -10107,7 +10010,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "#PWR03")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -10212,7 +10115,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "21b0d9c6-643b-4ed7-be37-0cfb9add099c")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR019"
 			(at 139.7 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -10272,7 +10175,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "#PWR018")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -10290,7 +10193,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "25a3d9f0-671f-4559-8438-e1eb86790e2b")
-		(property "Reference" "H1"
+		(property "Reference" "H2"
 			(at 266.7 151.5653 0)
 			(hide yes)
 			(show_name no)
@@ -10353,7 +10256,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "H1")
+					(reference "H2")
 					(unit 1)
 				)
 			)
@@ -10370,7 +10273,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "290e8a39-e214-4217-8c5d-5e66d1710b4c")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR033"
 			(at 232.41 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -10430,7 +10333,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "#PWR035")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -10448,7 +10351,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "29ed773a-c674-41ba-9df6-848750f33da0")
-		(property "Reference" "#PWR020"
+		(property "Reference" "#PWR01"
 			(at 46.99 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -10508,7 +10411,94 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "#PWR020")
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "Screw_Terminal_01x03_1")
+		(lib_id "Connector:Screw_Terminal_01x03")
+		(at 148.59 179.07 0)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2b80ce36-1b6d-4495-a38c-79751f7ddf7d")
+		(property "Reference" "J5"
+			(at 150.622 171.704 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Screw_Terminal_01x03"
+			(at 151.13 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
+			(at 148.59 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 148.59 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic screw terminal, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 148.59 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a0af2001-baa0-4482-98e3-16e6d7c42f0b")
+		)
+		(pin "2"
+			(uuid "37b63c16-e5b0-495b-9be9-026817345376")
+		)
+		(pin "3"
+			(uuid "cb444b3f-afa8-4ba3-a9b8-4ca02ccf647b")
+		)
+		(instances
+			(project "BallValveController"
+				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
+					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -10525,7 +10515,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2cbc9ebc-c02f-4f41-8681-1c2ce12ef3b2")
-		(property "Reference" "R16"
+		(property "Reference" "R15"
 			(at 185.42 106.68 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10587,7 +10577,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "R16")
+					(reference "R15")
 					(unit 1)
 				)
 			)
@@ -10604,7 +10594,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2ccfbfe2-f2d5-4b61-9c63-42ca7a91c27a")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR010"
 			(at 106.68 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -10664,7 +10654,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "#PWR09")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -10681,7 +10671,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2f846af1-b282-4613-859a-ee77f533bb16")
-		(property "Reference" "R9"
+		(property "Reference" "R12"
 			(at 137.16 41.91 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10745,7 +10735,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "R9")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -10762,7 +10752,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2f9616d4-d03a-4928-aa32-21d872b81100")
-		(property "Reference" "R17"
+		(property "Reference" "R16"
 			(at 198.882 113.03 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10824,7 +10814,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "R17")
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -10920,7 +10910,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "32075e22-39c6-425e-b048-96adfe81e5ac")
-		(property "Reference" "R4"
+		(property "Reference" "R6"
 			(at 77.978 182.0453 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10995,7 +10985,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "R4")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -11012,7 +11002,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "346d8eae-6b3f-44d1-ac56-6f7837b537ba")
-		(property "Reference" "D1"
+		(property "Reference" "D5"
 			(at 140.97 99.568 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11096,7 +11086,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "D1")
+					(reference "D5")
 					(unit 1)
 				)
 			)
@@ -11113,7 +11103,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "34ba2c27-68ea-4195-bfca-de6b8db47f50")
-		(property "Reference" "R12"
+		(property "Reference" "R1"
 			(at 29.972 179.324 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11188,7 +11178,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "R12")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -11294,7 +11284,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3cde176b-2d25-4a42-92d4-379c4a2e1c1d")
-		(property "Reference" "TP2"
+		(property "Reference" "TP4"
 			(at 109.22 165.6079 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11355,7 +11345,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "TP2")
+					(reference "TP4")
 					(unit 1)
 				)
 			)
@@ -11372,7 +11362,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "427b59e0-4a26-48c9-8ca7-cbc0ee4ce2f3")
-		(property "Reference" "R13"
+		(property "Reference" "R17"
 			(at 205.74 67.31 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11436,7 +11426,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "R13")
+					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -11453,7 +11443,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "42a77fb5-0148-4862-891e-0235629dd4f5")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR029"
 			(at 204.47 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -11513,7 +11503,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "#PWR031")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -11530,7 +11520,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "45797ab5-1aee-4695-b72e-920f1bdf45e7")
-		(property "Reference" "#PWR041"
+		(property "Reference" "#PWR039"
 			(at 274.32 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -11590,7 +11580,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "#PWR041")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -11607,7 +11597,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "45b0e371-62de-4afc-9396-262d6581186d")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR013"
 			(at 125.73 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -11667,7 +11657,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "#PWR011")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -11685,7 +11675,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "48a892d4-c08f-469e-b9e8-096947050bbc")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR05"
 			(at 86.36 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -11745,7 +11735,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "#PWR022")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -11762,7 +11752,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "495a9996-29c7-4a29-af4b-9b9aa04823d6")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR016"
 			(at 134.62 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -11822,7 +11812,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "#PWR015")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -11840,7 +11830,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "50adbe68-ae25-4391-b4b5-d211e1e019ed")
-		(property "Reference" "H2"
+		(property "Reference" "H1"
 			(at 260.35 151.5653 0)
 			(hide yes)
 			(show_name no)
@@ -11903,7 +11893,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "H2")
+					(reference "H1")
 					(unit 1)
 				)
 			)
@@ -12104,7 +12094,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5cdf8e04-df0b-48da-b32c-52d66fa71857")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR07"
 			(at 97.79 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -12164,7 +12154,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "#PWR06")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -12181,7 +12171,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "60694924-375d-43c5-84f7-223b3a66bdea")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR09"
 			(at 100.33 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -12241,7 +12231,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "#PWR08")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -12259,7 +12249,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "640180f6-4a26-45dc-9a6c-63c0a543c6d7")
-		(property "Reference" "C6"
+		(property "Reference" "C7"
 			(at 102.87 178.1809 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12334,7 +12324,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "C6")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -12351,7 +12341,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6d7ddcd2-8161-46aa-8973-5800400f4da3")
-		(property "Reference" "D9"
+		(property "Reference" "D2"
 			(at 92.71 87.63 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12413,7 +12403,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "D9")
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -12430,7 +12420,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "71f5301a-a7ad-4205-be75-de7d6223c94f")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR024"
 			(at 172.72 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -12490,7 +12480,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "#PWR026")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -12507,7 +12497,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "76e38897-ba3b-41bb-8039-1b681fa9c33e")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR012"
 			(at 121.92 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -12567,7 +12557,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "#PWR017")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -12585,7 +12575,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7877028d-500d-400d-afcd-33c4c2a60278")
-		(property "Reference" "D3"
+		(property "Reference" "D4"
 			(at 134.62 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12671,7 +12661,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "D3")
+					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -12688,7 +12678,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7af6d509-1a7a-4499-b7e7-2afa8f1974f7")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR036"
 			(at 264.16 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -12748,7 +12738,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "#PWR037")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -12765,7 +12755,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7e142dd9-0ab0-46ce-bd0f-900f42e0c781")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR027"
 			(at 196.85 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -12825,7 +12815,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "#PWR014")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -12842,7 +12832,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "82045c05-6cc1-439b-b15a-17e0232bf104")
-		(property "Reference" "R1"
+		(property "Reference" "R3"
 			(at 53.34 106.68 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12906,7 +12896,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "R1")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -12924,7 +12914,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "85c889d0-182a-4b7d-bfbc-4c301daaa00b")
-		(property "Reference" "TP4"
+		(property "Reference" "TP6"
 			(at 241.3 104.6479 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12985,7 +12975,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "TP4")
+					(reference "TP6")
 					(unit 1)
 				)
 			)
@@ -13087,7 +13077,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8f5ae1f3-bd23-486c-ba2b-53a73e263ae4")
-		(property "Reference" "R3"
+		(property "Reference" "R5"
 			(at 77.978 173.1553 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13162,7 +13152,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "R3")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -13179,7 +13169,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8fdedf15-d3a5-43f5-b6a6-4e8924fc3b84")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR037"
 			(at 264.16 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -13239,7 +13229,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "#PWR038")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -13256,7 +13246,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "912efa80-6c01-4320-a3a0-2cf3fa186ef3")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR023"
 			(at 172.72 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -13316,7 +13306,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "#PWR025")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -13417,12 +13407,12 @@
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board no)
+		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9b40e793-83c3-4113-8e74-80467e18d817")
-		(property "Reference" "U4"
+		(property "Reference" "U1"
 			(at 46.99 162.56 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13497,7 +13487,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "U4")
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -13601,7 +13591,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9fb369dc-b7a3-434d-9f65-9623b76caa9b")
-		(property "Reference" "C5"
+		(property "Reference" "C6"
 			(at 92.71 178.1809 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13676,7 +13666,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "C5")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -13694,7 +13684,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a3006a8f-7726-4f12-8d02-6115d02a6819")
-		(property "Reference" "C7"
+		(property "Reference" "C8"
 			(at 109.22 179.0762 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13758,7 +13748,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "C7")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -13775,7 +13765,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a6c71716-e294-4fb2-9b25-8624fd7924ac")
-		(property "Reference" "JP5"
+		(property "Reference" "JP2"
 			(at 135.636 97.028 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13838,7 +13828,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "JP5")
+					(reference "JP2")
 					(unit 1)
 				)
 			)
@@ -13855,7 +13845,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a75bcd75-7fc0-4abe-9e6e-12c7bb6effce")
-		(property "Reference" "L1"
+		(property "Reference" "L2"
 			(at 69.596 172.212 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13928,7 +13918,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "L1")
+					(reference "L2")
 					(unit 1)
 				)
 			)
@@ -13945,7 +13935,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a79a0807-e604-4f5b-85b2-baa6e211d3f2")
-		(property "Reference" "#PWR030"
+		(property "Reference" "#PWR028"
 			(at 204.47 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -14005,7 +13995,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "#PWR030")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -14022,7 +14012,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a935f2ff-d1e4-4674-80fc-f536e494a238")
-		(property "Reference" "R6"
+		(property "Reference" "R8"
 			(at 81.28 97.79 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14086,7 +14076,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "R6")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -14103,7 +14093,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a9bc5b76-d55c-49dd-97eb-466234ca1e98")
-		(property "Reference" "C2"
+		(property "Reference" "C3"
 			(at 59.69 171.704 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14165,7 +14155,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "C2")
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -14183,7 +14173,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "aba42b44-2e46-4677-a861-97cc0f4ca4c0")
-		(property "Reference" "D4"
+		(property "Reference" "D1"
 			(at 88.9 148.2724 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14247,7 +14237,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "D4")
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -14260,11 +14250,11 @@
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board no)
+		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "acc6a427-4138-4b00-8a5e-c4564499427c")
-		(property "Reference" "R19"
+		(property "Reference" "R2"
 			(at 33.782 186.944 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14339,7 +14329,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "R19")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -14356,7 +14346,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "aceb6830-769b-42a1-b13e-4487c6d88369")
-		(property "Reference" "R18"
+		(property "Reference" "R14"
 			(at 140.97 96.52 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14418,7 +14408,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "R18")
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -14435,7 +14425,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ad68286f-f256-4980-a5c6-a73774103bec")
-		(property "Reference" "JP2"
+		(property "Reference" "JP3"
 			(at 199.136 157.988 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14498,7 +14488,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "JP2")
+					(reference "JP3")
 					(unit 1)
 				)
 			)
@@ -14515,7 +14505,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "afe0f3f5-24a1-45ea-af35-e026b06cac89")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR032"
 			(at 220.98 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -14575,7 +14565,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "#PWR034")
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -14593,7 +14583,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b1045be5-96fe-49d1-b2d3-b355952ada42")
-		(property "Reference" "1"
+		(property "Reference" "11"
 			(at 48.26 115.57 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14667,7 +14657,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "1")
+					(reference "11")
 					(unit 1)
 				)
 			)
@@ -14765,7 +14755,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b5182a2c-af96-4350-a68e-b8f84fbf1487")
-		(property "Reference" "C1"
+		(property "Reference" "C2"
 			(at 24.13 176.276 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14829,7 +14819,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "C1")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -14847,7 +14837,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b5ecfbb1-e89c-4d0f-a1c6-5c0d190ed0ae")
-		(property "Reference" "TP1"
+		(property "Reference" "TP2"
 			(at 77.47 89.4079 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14908,7 +14898,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "TP1")
+					(reference "TP2")
 					(unit 1)
 				)
 			)
@@ -14925,7 +14915,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b74ef642-46f2-4126-88f3-4e92fb245d25")
-		(property "Reference" "R2"
+		(property "Reference" "R4"
 			(at 64.77 106.68 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14989,86 +14979,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "R2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x01_Male")
-		(at 167.64 176.53 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "b9147a14-dc39-4b20-b755-87946cc45065")
-		(property "Reference" "J5"
-			(at 168.3512 174.8028 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "Conn_01x01_Male"
-			(at 168.3512 177.1142 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
-			(at 167.64 176.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 167.64 176.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 167.64 176.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "35c9c1b4-9467-4f2e-8d4f-2ca59b84ec4e")
-		)
-		(instances
-			(project "BallValveController"
-				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "J5")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -15086,7 +14997,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ba338aed-fdf6-4524-8745-baf39e229bbd")
-		(property "Reference" "JP3"
+		(property "Reference" "JP4"
 			(at 213.36 156.21 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15154,7 +15065,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "JP3")
+					(reference "JP4")
 					(unit 1)
 				)
 			)
@@ -15340,7 +15251,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c9a3ac52-a7fb-48d2-acbd-73001454aeb3")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR030"
 			(at 210.82 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -15400,7 +15311,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "#PWR032")
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -15418,7 +15329,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cce28e60-dadc-4bd5-8cda-9099dd1ae8e6")
-		(property "Reference" "L2"
+		(property "Reference" "L1"
 			(at 69.85 160.02 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15491,7 +15402,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "L2")
+					(reference "L1")
 					(unit 1)
 				)
 			)
@@ -15508,7 +15419,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cebc11d3-1baf-4772-8e45-f958a3adc9c9")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR022"
 			(at 167.64 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -15568,7 +15479,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "#PWR024")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -15585,7 +15496,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cfa4fb05-7766-4d81-b445-3207ce9f13eb")
-		(property "Reference" "C10"
+		(property "Reference" "C9"
 			(at 170.6372 128.3716 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15649,7 +15560,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "C10")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -15666,7 +15577,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d121ea51-54af-49bf-a68e-13f0e3690b74")
-		(property "Reference" "U3"
+		(property "Reference" "U2"
 			(at 174.8633 93.98 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15883,7 +15794,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "U3")
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -15901,7 +15812,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d2bc4e10-9c15-420e-b743-4ef64dcd008d")
-		(property "Reference" "TP3"
+		(property "Reference" "TP1"
 			(at 73.66 42.4179 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15962,7 +15873,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "TP3")
+					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -15980,7 +15891,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d84851d1-e56c-4de9-ae03-215347a60a8d")
-		(property "Reference" "TP6"
+		(property "Reference" "TP3"
 			(at 105.41 89.4079 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16041,7 +15952,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "TP6")
+					(reference "TP3")
 					(unit 1)
 				)
 			)
@@ -16058,7 +15969,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d9580d20-543c-4e08-8db9-2a9ec9226f19")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR06"
 			(at 90.17 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -16118,7 +16029,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "#PWR05")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -16136,7 +16047,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dbf4c97e-56bd-47ce-83cb-cc497959e234")
-		(property "Reference" "D5"
+		(property "Reference" "D6"
 			(at 209.55 128.27 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16220,7 +16131,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "D5")
+					(reference "D6")
 					(unit 1)
 				)
 			)
@@ -16238,7 +16149,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dfd37697-1df6-4caf-a18f-9a53968bd199")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR03"
 			(at 52.07 195.58 0)
 			(hide yes)
 			(show_name no)
@@ -16298,7 +16209,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "#PWR02")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -16315,7 +16226,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e1805731-0006-4ce0-b817-ec4cc238c789")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR025"
 			(at 195.58 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -16375,7 +16286,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "#PWR027")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -16392,7 +16303,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e1a36292-042b-4820-867b-5070b5941ad4")
-		(property "Reference" "D2"
+		(property "Reference" "D3"
 			(at 134.62 166.37 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16454,7 +16365,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "D2")
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -16635,7 +16546,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ede94167-ad12-453c-b7a4-96d6cd290757")
-		(property "Reference" "#PWR040"
+		(property "Reference" "#PWR038"
 			(at 271.78 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -16695,7 +16606,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "#PWR040")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -16712,7 +16623,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f3a621a4-89fc-415e-b891-5f5f81f30a6b")
-		(property "Reference" "D8"
+		(property "Reference" "D9"
 			(at 234.95 76.2 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16774,7 +16685,7 @@
 		(instances
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "D8")
+					(reference "D9")
 					(unit 1)
 				)
 			)
