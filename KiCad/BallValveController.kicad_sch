@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Ball Valve Controller for CR05-02 wiring - ESP32-C3/C6")
-		(date "2026-01-04")
-		(rev "8.1.1")
+		(date "2026-05-06")
+		(rev "8.2.0")
 		(company "Copyright - Hans Rune Bue <email@hansrune.net>")
 		(comment 1 "Hardware is licensed under CERN-OHL-W-2.0")
 		(comment 2 "Project documents are licensed under CC-BY-SA 2.0")
