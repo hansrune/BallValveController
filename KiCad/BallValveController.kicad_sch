@@ -5254,16 +5254,16 @@
 		(uuid "baa705ab-cf75-45a5-a6f6-a41fb9c0571e")
 	)
 	(junction
-		(at 132.08 83.82)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c205f5b6-95b8-4983-b288-f011447cbf6f")
-	)
-	(junction
 		(at 58.42 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cb474d22-9c7c-4968-acad-7d881b6a1a70")
+	)
+	(junction
+		(at 191.77 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cd45fd28-4a58-4002-99c4-182102262878")
 	)
 	(junction
 		(at 232.41 83.82)
@@ -5290,22 +5290,16 @@
 		(uuid "d7fb2078-0126-4d07-92b6-ddaa0240b77f")
 	)
 	(junction
-		(at 137.16 106.68)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "dbfc68d3-4962-4d24-8ab4-9bc95a3717f8")
-	)
-	(junction
-		(at 144.78 99.06)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "dc9cf6b1-4507-4566-9f0a-96c97bec9382")
-	)
-	(junction
 		(at 86.36 189.23)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e13757ea-a147-4f82-a383-2e39be3ad595")
+	)
+	(junction
+		(at 132.08 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e470d757-fa7f-4e57-b133-af0c3699bc19")
 	)
 	(junction
 		(at 132.08 160.02)
@@ -5326,12 +5320,6 @@
 		(uuid "e947e0cb-0d24-4f0a-b569-f42de43c2f02")
 	)
 	(junction
-		(at 196.85 109.22)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ed945ac8-9c05-4a35-8f0e-9fb5bea13578")
-	)
-	(junction
 		(at 139.7 31.75)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5348,6 +5336,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f2a4b170-54d5-4382-bcc1-7fbb824bc09e")
+	)
+	(junction
+		(at 196.85 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f50e79b2-3b17-407b-a058-5ca5b5772398")
 	)
 	(junction
 		(at 144.78 83.82)
@@ -5725,7 +5719,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 83.82) (xy 144.78 99.06)
+			(xy 144.78 83.82) (xy 144.78 106.68)
 		)
 		(stroke
 			(width 0)
@@ -6545,13 +6539,13 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 99.06) (xy 144.78 106.68)
+			(xy 191.77 109.22) (xy 196.85 109.22)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a9b5e044-c2f7-48c4-960d-1536d13d0e36")
+		(uuid "a8bee637-f7ef-4970-967f-1a0019b2cdd0")
 	)
 	(wire
 		(pts
@@ -6562,6 +6556,16 @@
 			(type default)
 		)
 		(uuid "aa1f2454-22d6-4deb-b858-3b0c516a799c")
+	)
+	(wire
+		(pts
+			(xy 196.85 119.38) (xy 196.85 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa6bf6f5-1cfe-4e83-a5fd-78915ee58c2b")
 	)
 	(wire
 		(pts
@@ -6672,6 +6676,16 @@
 			(type default)
 		)
 		(uuid "ba0eb7a2-5ace-44a3-bb48-a5b052df5ae9")
+	)
+	(wire
+		(pts
+			(xy 196.85 110.49) (xy 196.85 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bbd1df73-b2b9-4e0a-ac8a-6634c10c0a72")
 	)
 	(wire
 		(pts
@@ -6845,7 +6859,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 109.22) (xy 196.85 109.22)
+			(xy 189.23 109.22) (xy 191.77 109.22)
 		)
 		(stroke
 			(width 0)
@@ -7035,16 +7049,6 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 99.06) (xy 137.16 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ee536c5d-8b5f-4b56-9203-949e3727ac69")
-	)
-	(wire
-		(pts
 			(xy 76.2 189.23) (xy 52.07 189.23)
 		)
 		(stroke
@@ -7192,6 +7196,16 @@
 			(type default)
 		)
 		(uuid "fcc058e3-0cca-4255-a221-cdd573b9ac5e")
+	)
+	(wire
+		(pts
+			(xy 191.77 107.95) (xy 191.77 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fda62040-6db0-4579-b849-787ebc1be130")
 	)
 	(wire
 		(pts
@@ -8298,6 +8312,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 191.77 100.33 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "047b7bfa-39f6-4f34-8524-44b5fd5448a8")
+		(property "Reference" "#PWR039"
+			(at 191.77 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 192.151 95.9358 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 191.77 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 191.77 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 191.77 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4101cdd4-0edb-4d0e-960d-b5a1962c6333")
+		)
+		(instances
+			(project "BallValveController"
+				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
+					(reference "#PWR039")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 99.06 170.18 0)
 		(unit 1)
@@ -8447,6 +8538,85 @@
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
 					(reference "#PWR028")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 135.89 83.82 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0996072e-0ddd-415e-a9ae-5a84ff11cf88")
+		(property "Reference" "R19"
+			(at 135.89 81.28 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 135.89 86.36 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 135.89 85.598 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 135.89 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 135.89 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8404f4c3-4882-4a57-81e9-2f3f8f78bd05")
+		)
+		(pin "2"
+			(uuid "6c66011d-c4a1-4e52-bdde-2317680cc2ce")
+		)
+		(instances
+			(project "BallValveController"
+				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
+					(reference "R19")
 					(unit 1)
 				)
 			)
@@ -9497,6 +9667,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 191.77 104.14 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "27384a60-258a-4339-9537-08c23fc414fe")
+		(property "Reference" "R20"
+			(at 193.802 104.14 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4.3k"
+			(at 192.024 104.14 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 189.992 104.14 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 191.77 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 191.77 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7ac6608d-9fa0-4434-b4c0-3c330f4534ad")
+		)
+		(pin "2"
+			(uuid "f95cdd80-896b-4912-8968-31fc33e0e7ce")
+		)
+		(instances
+			(project "BallValveController"
+				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
+					(reference "R20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+VSW")
 		(at 232.41 64.77 0)
 		(unit 1)
@@ -9812,7 +10061,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 196.85 113.03 0)
+		(at 196.85 114.3 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9822,7 +10071,7 @@
 		(dnp no)
 		(uuid "2f9616d4-d03a-4928-aa32-21d872b81100")
 		(property "Reference" "R17"
-			(at 198.882 113.03 90)
+			(at 198.882 114.3 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9832,7 +10081,7 @@
 			)
 		)
 		(property "Value" "4.3k"
-			(at 196.85 113.03 90)
+			(at 197.104 114.3 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9842,7 +10091,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 195.072 113.03 90)
+			(at 195.072 114.3 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9853,7 +10102,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 196.85 113.03 0)
+			(at 196.85 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9864,7 +10113,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 196.85 113.03 0)
+			(at 196.85 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10055,107 +10304,6 @@
 			(project "BallValveController"
 				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
 					(reference "R4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D")
-		(at 140.97 106.68 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "346d8eae-6b3f-44d1-ac56-6f7837b537ba")
-		(property "Reference" "D1"
-			(at 140.97 99.568 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1N4148"
-			(at 140.462 103.124 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
-			(at 140.97 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 140.97 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Diode"
-			(at 140.97 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 140.97 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 140.97 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1daec8f5-956e-45f1-a587-004e1d1cf1da")
-		)
-		(pin "2"
-			(uuid "9e27e397-c874-4975-9ede-8edf1cb3f49f")
-		)
-		(instances
-			(project "BallValveController"
-				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -11555,110 +11703,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
-		(at 135.89 83.82 0)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "7877028d-500d-400d-afcd-33c4c2a60278")
-		(property "Reference" "D3"
-			(at 134.62 88.9 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1N4148"
-			(at 133.35 86.36 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
-			(at 135.89 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 135.89 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Diode"
-			(at 135.89 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 135.89 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 135.89 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a9c60b68-e23f-4ce1-8f4e-1036de0b2c56")
-		)
-		(pin "2"
-			(uuid "ce597a42-1a14-4dbe-b37f-e012540b2760")
-		)
-		(instances
-			(project "BallValveController"
-				(path "/2a5b3e3c-2022-46db-8938-2c3b2e9edb6d"
-					(reference "D3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 264.16 127 0)
 		(unit 1)
@@ -11737,7 +11781,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 196.85 116.84 0)
+		(at 196.85 119.38 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11747,7 +11791,7 @@
 		(dnp no)
 		(uuid "7e142dd9-0ab0-46ce-bd0f-900f42e0c781")
 		(property "Reference" "#PWR014"
-			(at 196.85 123.19 0)
+			(at 196.85 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11758,7 +11802,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 196.977 121.2342 0)
+			(at 197.104 124.968 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11768,7 +11812,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 196.85 116.84 0)
+			(at 196.85 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11779,7 +11823,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 196.85 116.84 0)
+			(at 196.85 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11790,7 +11834,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 196.85 116.84 0)
+			(at 196.85 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13154,7 +13198,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 140.97 99.06 90)
+		(at 140.97 106.68 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13164,7 +13208,7 @@
 		(dnp no)
 		(uuid "aceb6830-769b-42a1-b13e-4487c6d88369")
 		(property "Reference" "R18"
-			(at 140.97 96.52 90)
+			(at 140.97 104.14 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13174,7 +13218,7 @@
 			)
 		)
 		(property "Value" "0"
-			(at 140.97 101.6 90)
+			(at 140.97 109.22 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13184,7 +13228,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 140.97 100.838 90)
+			(at 140.97 108.458 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13195,7 +13239,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 140.97 99.06 0)
+			(at 140.97 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13206,7 +13250,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 140.97 99.06 0)
+			(at 140.97 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13410,7 +13454,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7k"
+		(property "Value" "0"
 			(at 130.81 102.87 90)
 			(show_name no)
 			(do_not_autoplace no)
