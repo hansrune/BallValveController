@@ -127,6 +127,10 @@
           ""
         ],
         [
+          "silk_over_copper|173976500|91721400|61e270cd-74fb-44a4-82c6-16dcb6314cfb|6b0ffdbc-219d-447a-8613-c98a755d5b4e",
+          ""
+        ],
+        [
           "silk_over_copper|176516500|109501400|0ec75d3f-ae7f-444f-bb2b-709d96674099|48e0e11b-4002-4982-ac98-75c3fec50811",
           ""
         ],
@@ -264,7 +268,7 @@
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
         "min_track_width": 0.2,
-        "min_via_annular_width": 0.1524,
+        "min_via_annular_width": 0.15,
         "min_via_diameter": 0.6,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
